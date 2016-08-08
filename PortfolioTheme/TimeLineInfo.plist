@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<dict>
+		<key>Title</key>
+		<string>New York</string>
+		<key>Image</key>
+		<string>p1.jpg</string>
+		<key>Date</key>
+		<string>12/02/2012</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+	<key>1</key>
+	<dict>
+		<key>Title</key>
+		<string>Early Years</string>
+		<key>Image</key>
+		<string>p2.png</string>
+		<key>Date</key>
+		<string>12/02/2013</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>Title</key>
+		<string>Ninja Time</string>
+		<key>Image</key>
+		<string>p3.jpg</string>
+		<key>Date</key>
+		<string>12/02/2014</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>Title</key>
+		<string>Business Trip</string>
+		<key>Image</key>
+		<string>p4.jpg</string>
+		<key>Date</key>
+		<string>12/02/2015</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>Title</key>
+		<string>Nowadays</string>
+		<key>Image</key>
+		<string>p5.jpg</string>
+		<key>Date</key>
+		<string>12/02/2016</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+	<key>5</key>
+	<dict>
+		<key>Title</key>
+		<string>At the end</string>
+		<key>Image</key>
+		<string>p6.jpg</string>
+		<key>Date</key>
+		<string>12/02/2017</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+	<key>6</key>
+	<dict>
+		<key>Title</key>
+		<string>At the end</string>
+		<key>Image</key>
+		<string>p7.jpg</string>
+		<key>Date</key>
+		<string>12/02/2017</string>
+		<key>Text</key>
+		<string>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.</string>
+	</dict>
+</dict>
+</plist>

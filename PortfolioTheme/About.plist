@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0</key>
+	<dict>
+		<key>Title</key>
+		<string>Openning</string>
+		<key>Logo</key>
+		<string></string>
+		<key>Slogan</key>
+		<string>p1.jpg</string>
+		<key>MainImage</key>
+		<string></string>
+		<key>Facebook</key>
+		<string></string>
+		<key>Twitter</key>
+		<string></string>
+		<key>Google+</key>
+		<string></string>
+		<key>Pinterest</key>
+		<string></string>
+		<key>Envato</key>
+		<string></string>
+		<key>Vimeo</key>
+		<string></string>
+		<key>YouTube</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

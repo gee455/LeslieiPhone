@@ -33,6 +33,7 @@
 //Pop In iPhone Versions
 #import "BKTPopinControllerViewController2i.h"
 #import "BKTPopinControllerViewController3i.h"
+#import "BKTPopinControllerViewController4i.h"
 
 //Map Popin
 #import "BKTPopin2ControllerViewController_map1.h"
@@ -946,7 +947,7 @@
     if ([qrCode isEqual: @"2"]) {
         
         
-        BKTPopinControllerViewController4 *popin1 = [[BKTPopinControllerViewController4 alloc] init];
+        BKTPopinControllerViewController4i  *popin1 = [[BKTPopinControllerViewController4i  alloc] init];
         
         //Disable auto dismiss and removed semi-transparent background
         [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];

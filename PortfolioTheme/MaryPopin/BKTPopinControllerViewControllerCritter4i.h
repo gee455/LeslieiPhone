@@ -23,10 +23,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BKTPopinControllerViewControllerUnlock2i : UIViewController <UIScrollViewDelegate>
-
-@property (strong, nonatomic) IBOutlet UIButton *critterBtn;
-- (IBAction)showSuccess:(id)sender;
+@interface BKTPopinControllerViewControllerCritter4i : UIViewController <UIScrollViewDelegate>
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 @end

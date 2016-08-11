@@ -21,14 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "BKTPopinControllerViewControllerUnlock2i.h"
+#import "BKTPopinControllerViewControllerCritter4i.h"
 
 #import "UIViewController+MaryPopin.h"
 
 //#import "SWRevealViewController.h"
 #import "SCLAlertView.h"
 
-@interface BKTPopinControllerViewControllerUnlock2i ()
+@interface BKTPopinControllerViewControllerCritter4i ()
 @property (nonatomic, strong) UIImageView *imageView;
 
 - (IBAction)closeButtonPressed:(id)sender;
@@ -39,7 +39,7 @@
 @end
 
 
-@implementation BKTPopinControllerViewControllerUnlock2i
+@implementation BKTPopinControllerViewControllerCritter4i
 
 
 @synthesize scrollView = _scrollView;
@@ -75,7 +75,7 @@
     [super viewWillAppear:animated];
     
     [_scrollView setScrollEnabled:YES];
-    [_scrollView setContentSize:CGSizeMake(320, 618)];
+    [_scrollView setContentSize:CGSizeMake(320, 836)];
 }
 
 - (void)viewDidUnload

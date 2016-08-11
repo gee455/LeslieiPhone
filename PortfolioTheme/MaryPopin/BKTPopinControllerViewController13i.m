@@ -38,6 +38,11 @@
 
 //Feature Pop-in Content
 #import "BKTPopinControllerViewControllerUnlock1i.h"
+#import "BKTPopinControllerViewControllerUnlock2i.h"
+#import "BKTPopinControllerViewControllerCritter1i.h"
+#import "BKTPopinControllerViewControllerCritter2i.h"
+#import "BKTPopinControllerViewControllerCritter3i.h"
+#import "BKTPopinControllerViewControllerCritter4i.h"
 
 @interface BKTPopinControllerViewController13i ()
 @property (nonatomic, strong) UIImageView *imageView;
@@ -109,7 +114,7 @@
 
 - (IBAction)presentPopinPressed1:(id)sender
 {
-    BKTPopin2ControllerViewController_critter1 *popin = [[BKTPopin2ControllerViewController_critter1 alloc] init];
+    BKTPopinControllerViewControllerCritter1i *popin = [[BKTPopinControllerViewControllerCritter1i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     
@@ -122,7 +127,7 @@
 
 - (IBAction)presentPopinPressed2:(id)sender
 {
-    BKTPopin2ControllerViewController_critter2 *popin = [[BKTPopin2ControllerViewController_critter2 alloc] init];
+    BKTPopinControllerViewControllerCritter2i *popin = [[BKTPopinControllerViewControllerCritter2i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     
@@ -135,7 +140,7 @@
 
 - (IBAction)presentPopinPressed3:(id)sender
 {
-    BKTPopin2ControllerViewController_critter3 *popin = [[BKTPopin2ControllerViewController_critter3 alloc] init];
+    BKTPopinControllerViewControllerCritter3i *popin = [[BKTPopinControllerViewControllerCritter3i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     
@@ -148,7 +153,7 @@
 
 - (IBAction)presentPopinPressed4:(id)sender
 {
-    BKTPopin2ControllerViewController_critter4 *popin = [[BKTPopin2ControllerViewController_critter4 alloc] init];
+    BKTPopinControllerViewControllerCritter4i *popin = [[BKTPopinControllerViewControllerCritter4i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     
@@ -174,7 +179,7 @@
 
 - (IBAction)presentPopinPressed6:(id)sender
 {
-    BKTPopin2ControllerViewController_unlock2 *popin = [[BKTPopin2ControllerViewController_unlock2 alloc] init];
+    BKTPopinControllerViewControllerUnlock2i *popin = [[BKTPopinControllerViewControllerUnlock2i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     

@@ -38,7 +38,7 @@
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_01.png" id="Wiw-av-ixu">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raptorCage_01.png" id="Wiw-av-ixu">
                                     <rect key="frame" x="0.0" y="0.0" width="321" height="89"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -54,114 +54,48 @@
                                         <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="8gp-J8-L3i"/>
                                     </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_10.png" id="LnD-XV-4t8">
-                                    <rect key="frame" x="6" y="603" width="308" height="186"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raptorCage_04.png" id="qpA-c6-i0A">
+                                    <rect key="frame" x="7" y="681" width="308" height="289"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_11.png" id="qpA-c6-i0A">
-                                    <rect key="frame" x="8" y="864" width="308" height="186"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raptorCage_06.png" id="2kq-tB-bNm">
+                                    <rect key="frame" x="7" y="1014" width="308" height="261"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_14.png" id="2kq-tB-bNm">
-                                    <rect key="frame" x="6" y="1058" width="308" height="186"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raptorCage_10.png" id="54l-l0-PIw">
+                                    <rect key="frame" x="5" y="1318" width="308" height="256"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_15.png" id="54l-l0-PIw">
-                                    <rect key="frame" x="8" y="1314" width="308" height="186"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_18.png" id="CaH-BH-YKX">
-                                    <rect key="frame" x="4" y="1564" width="308" height="186"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_19.png" id="q88-Iv-FX8">
-                                    <rect key="frame" x="6" y="1827" width="308" height="186"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet Our Critters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z08-bQ-fZz">
-                                    <rect key="frame" x="28" y="226" width="246" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say hello to our magnificent birds of prey!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z08-bQ-fZz">
+                                    <rect key="frame" x="28" y="186" width="246" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rR-bJ-LOc">
-                                    <rect key="frame" x="28" y="251" width="258" height="265"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Inside our Critter House visitors get an up close look at the diversity of 
-Michigan native as well as non-native wildlife. Here you will also discover the amazing behaviors and adaptations of animals within naturalistic habitats. Some of the animals you will observe are former pets or have been rescued and are now serving as educational ambassadors. Our animals appear in 
-on-site programming, visit classrooms, and even attend special events. Join us during Critter House open hours to learn more about these unique and 
-fascinating critters.</string>
-                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the Critter!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9wm-Rq-OHo">
-                                    <rect key="frame" x="28" y="532" width="246" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on each picture to Play the Matching Game!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dI8-L1-okz">
+                                    <rect key="frame" x="28" y="624" width="275" height="54"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search and tap on the Turtle in the picture below!" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eWu-5u-zff">
-                                    <rect key="frame" x="28" y="551" width="258" height="46"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess who this beak belongs to!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Nm-Yj-x2w">
+                                    <rect key="frame" x="21" y="1280" width="273" height="27"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the Critter!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dI8-L1-okz">
-                                    <rect key="frame" x="22" y="800" width="246" height="22"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess who this eye belongs to!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zb2-hL-GHk">
+                                    <rect key="frame" x="18" y="1574" width="273" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search and tap on the Toad in the picture below!" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I5d-iA-212">
-                                    <rect key="frame" x="22" y="819" width="258" height="46"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Nm-Yj-x2w">
-                                    <rect key="frame" x="22" y="1246" width="273" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Bearded Dragon
-Pogona vitticeps
-(Click to see more)</string>
-                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zb2-hL-GHk">
-                                    <rect key="frame" x="21" y="1501" width="273" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Domestic Rabbit
-Oryctolagus cuniculus
-(Click to see more)</string>
-                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76T-CX-pMF">
-                                    <rect key="frame" x="24" y="1758" width="273" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Painted Turtle
-Chrysemys picta
-(Click to see more)</string>
-                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RYm-5C-RlU">
-                                    <rect key="frame" x="21" y="2026" width="273" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Tiger Salamander
-Ambystoma tigrinum
-(Click to see more)</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhI-hf-ORI">
-                                    <rect key="frame" x="8" y="123" width="287" height="95"/>
+                                    <rect key="frame" x="8" y="115" width="287" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">• Observe live animals in the Critter House during open hours. 
-• Click on the pictures below to learn more about some of the animals that live in the Critter House.</string>
+                                    <string key="text">• Raptor means to "seize or grasp".• Their feathers, beaks and talons are designed to help them catch their prey.</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -177,6 +111,29 @@ Ambystoma tigrinum
                                         <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="5Mr-uC-AYN"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rR-bJ-LOc">
+                                    <rect key="frame" x="28" y="238" width="258" height="370"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <mutableString key="text">Our raptors are housed outdoors, and you can walk right up to their enclosures seven days a week during daylight hours. Discover the origin of their name "raptor" which means "to seize or grasp" with their powerful feet and talons. Observe their feathers, beaks and so much more. Please note: when outdoor temperatures dip below 0 Fahrenheit, many birds will be removed from their enclosures as a cautionary measure.Most of our raptors have been adopted from the River Raisin Raptor Center education program. Our regal and beautiful birds have each suffered a permanent injury that makes them unable to survive in the wild, where even a seemingly small injury spells the difference between predatory dominance and certain death.</mutableString>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raptorCage_11.png" id="CaH-BH-YKX">
+                                    <rect key="frame" x="0.0" y="1616" width="308" height="294"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess who these feet belongs to!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76T-CX-pMF">
+                                    <rect key="frame" x="20" y="1913" width="273" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess who these feathers belong to!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I5d-iA-212">
+                                    <rect key="frame" x="35" y="969" width="258" height="46"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
@@ -193,12 +150,10 @@ Ambystoma tigrinum
         </view>
     </objects>
     <resources>
-        <image name="post13_01.png" width="1536" height="428"/>
-        <image name="post13_10.png" width="701" height="467"/>
-        <image name="post13_11.png" width="701" height="467"/>
-        <image name="post13_14.png" width="701" height="467"/>
-        <image name="post13_15.png" width="701" height="467"/>
-        <image name="post13_18.png" width="701" height="467"/>
-        <image name="post13_19.png" width="701" height="467"/>
+        <image name="raptorCage_01.png" width="1536" height="428"/>
+        <image name="raptorCage_04.png" width="637" height="637"/>
+        <image name="raptorCage_06.png" width="638" height="637"/>
+        <image name="raptorCage_10.png" width="637" height="637"/>
+        <image name="raptorCage_11.png" width="638" height="655"/>
     </resources>
 </document>

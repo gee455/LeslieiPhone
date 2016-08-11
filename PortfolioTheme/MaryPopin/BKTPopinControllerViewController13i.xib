@@ -38,7 +38,7 @@
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_01.png" id="Wiw-av-ixu">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_01.png" id="Wiw-av-ixu">
                                     <rect key="frame" x="0.0" y="0.0" width="321" height="89"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -54,27 +54,27 @@
                                         <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="8gp-J8-L3i"/>
                                     </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_10.png" id="LnD-XV-4t8">
-                                    <rect key="frame" x="6" y="603" width="308" height="186"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_04.png" id="LnD-XV-4t8">
+                                    <rect key="frame" x="-3" y="593" width="323" height="196"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_11.png" id="qpA-c6-i0A">
-                                    <rect key="frame" x="8" y="864" width="308" height="186"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_08.png" id="qpA-c6-i0A">
+                                    <rect key="frame" x="-3" y="861" width="325" height="196"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_14.png" id="2kq-tB-bNm">
-                                    <rect key="frame" x="6" y="1058" width="308" height="186"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_12.png" id="2kq-tB-bNm">
+                                    <rect key="frame" x="6" y="1062" width="308" height="186"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_15.png" id="54l-l0-PIw">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_14.png" id="54l-l0-PIw">
                                     <rect key="frame" x="8" y="1314" width="308" height="186"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_18.png" id="CaH-BH-YKX">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_18.png" id="CaH-BH-YKX">
                                     <rect key="frame" x="4" y="1564" width="308" height="186"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post13_19.png" id="q88-Iv-FX8">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="critterHouse_19.png" id="q88-Iv-FX8">
                                     <rect key="frame" x="6" y="1827" width="308" height="186"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -181,12 +181,12 @@
         </view>
     </objects>
     <resources>
-        <image name="post13_01.png" width="1536" height="428"/>
-        <image name="post13_10.png" width="701" height="467"/>
-        <image name="post13_11.png" width="701" height="467"/>
-        <image name="post13_14.png" width="701" height="467"/>
-        <image name="post13_15.png" width="701" height="467"/>
-        <image name="post13_18.png" width="701" height="467"/>
-        <image name="post13_19.png" width="701" height="467"/>
+        <image name="critterHouse_01.png" width="1536" height="419"/>
+        <image name="critterHouse_04.png" width="1438" height="961"/>
+        <image name="critterHouse_08.png" width="1474" height="982"/>
+        <image name="critterHouse_12.png" width="699" height="470"/>
+        <image name="critterHouse_14.png" width="693" height="470"/>
+        <image name="critterHouse_18.png" width="699" height="470"/>
+        <image name="critterHouse_19.png" width="705" height="470"/>
     </resources>
 </document>

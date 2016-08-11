@@ -30,6 +30,11 @@
 #import "BKTPopinControllerViewController14.h"
 #import "BKTPopinControllerViewController15.h"
 
+//Pop In iPhone Versions
+#import "BKTPopinControllerViewController2i.h"
+#import "BKTPopinControllerViewController3i.h"
+#import "BKTPopinControllerViewController4i.h"
+
 //Map Popin
 #import "BKTPopin2ControllerViewController_map1.h"
 #import "BKTPopin2ControllerViewController_map2.h"
@@ -923,7 +928,8 @@
     
     if ([qrCode isEqual: @"1"]) {
         
-        BKTPopinControllerViewController3 *popin1 = [[BKTPopinControllerViewController3 alloc] init];
+        //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
+        BKTPopinControllerViewController3i *popin1 = [[BKTPopinControllerViewController3i alloc] init];
         
         //Disable auto dismiss and removed semi-transparent background
         [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -941,7 +947,7 @@
     if ([qrCode isEqual: @"2"]) {
         
         
-        BKTPopinControllerViewController4 *popin1 = [[BKTPopinControllerViewController4 alloc] init];
+        BKTPopinControllerViewController4i  *popin1 = [[BKTPopinControllerViewController4i  alloc] init];
         
         //Disable auto dismiss and removed semi-transparent background
         [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];

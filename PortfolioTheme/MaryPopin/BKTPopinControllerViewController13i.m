@@ -36,6 +36,9 @@
 #import "BKTPopin2ControllerViewController_unlock1i.h"
 #import "BKTPopin2ControllerViewController_unlock2.h"
 
+//Feature Pop-in Content
+#import "BKTPopinControllerViewControllerUnlock1i.h"
+
 @interface BKTPopinControllerViewController13i ()
 @property (nonatomic, strong) UIImageView *imageView;
 
@@ -158,7 +161,7 @@
 
 - (IBAction)presentPopinPressed5:(id)sender
 {
-    BKTPopin2ControllerViewController_unlock1i *popin = [[BKTPopin2ControllerViewController_unlock1i alloc] init];
+    BKTPopinControllerViewControllerUnlock1i *popin = [[BKTPopinControllerViewControllerUnlock1i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     

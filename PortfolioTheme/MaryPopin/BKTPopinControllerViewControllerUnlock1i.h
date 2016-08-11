@@ -23,14 +23,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BKTPopinControllerViewController.h"
+@interface BKTPopinControllerViewControllerUnlock1i : UIViewController <UIScrollViewDelegate>
 
-@interface BKTPopin2ControllerViewController_unlock1i : BKTPopinControllerViewController {
-     IBOutlet UIWebView* _youTubeBackground;
-    IBOutlet UIScrollView *scroller;
-    
-}
-
-
+@property (strong, nonatomic) IBOutlet UIButton *critterBtn;
+- (IBAction)showSuccess:(id)sender;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 @end

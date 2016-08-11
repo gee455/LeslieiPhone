@@ -44,6 +44,9 @@
 
 
     _youTubeBackground.userInteractionEnabled = NO;
+    
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 642)];
 }
 
 

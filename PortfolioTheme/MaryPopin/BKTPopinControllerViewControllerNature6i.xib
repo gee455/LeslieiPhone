@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKTPopinControllerViewControllerNature3i">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKTPopinControllerViewControllerNature6i">
             <connections>
                 <outlet property="scrollView" destination="h69-Rk-6Ww" id="8Of-RB-Qiv"/>
                 <outlet property="view" destination="1" id="yTb-ML-RXb"/>
@@ -24,8 +24,8 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="578"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature3_03.png" id="5zL-vR-2NJ">
-                                    <rect key="frame" x="5" y="83" width="312" height="179"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature6_03.png" id="5zL-vR-2NJ">
+                                    <rect key="frame" x="5" y="83" width="312" height="230"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HI5-XH-K0N">
@@ -40,17 +40,17 @@
                                         <action selector="closeButtonPressed:" destination="-2" eventType="touchUpInside" id="PLT-9x-mQV"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passive Solar Features" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Ob-bz-T2y">
-                                    <rect key="frame" x="59" y="44" width="208" height="26"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interior Finishes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Ob-bz-T2y">
+                                    <rect key="frame" x="37" y="44" width="253" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tkM-xC-KmS">
-                                    <rect key="frame" x="27" y="290" width="272" height="186"/>
+                                    <rect key="frame" x="27" y="341" width="272" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Large well-insulated south facing windows allow the sun’s rays to heat and light the building in the winter. Underneath these windows, a ten-inch thick mass wall absorbs energy from the sun and slowly releases heat into the building.</string>
+                                    <string key="text">Inside, finished floors are made from recycled auto glass ceramic tiles and 100% recyclable carpet tiles made from post consumer plastic bottles.</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -71,6 +71,6 @@
         </view>
     </objects>
     <resources>
-        <image name="nature3_03.png" width="730" height="418"/>
+        <image name="nature6_03.png" width="590" height="463"/>
     </resources>
 </document>

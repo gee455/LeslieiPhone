@@ -22,8 +22,13 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface BKTPopinControllerViewControllerNature2i : UIViewController <UIScrollViewDelegate>
+@interface BKTPopin2ControllerViewController_QR1i : UIViewController <UIScrollViewDelegate, AVCaptureMetadataOutputObjectsDelegate>
+
+//QR Code
+@property (weak, nonatomic) IBOutlet UIView *viewPreview;
+
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 @end

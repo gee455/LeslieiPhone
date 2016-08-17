@@ -21,14 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "BKTPopinControllerViewControllerNature1i.h"
+#import "BKTPopinControllerViewControllerNature2i.h"
 
 #import "UIViewController+MaryPopin.h"
 
 //#import "SWRevealViewController.h"
 #import "SCLAlertView.h"
 
-@interface BKTPopinControllerViewControllerNature1i ()
+@interface BKTPopinControllerViewControllerNature2i ()
 @property (nonatomic, strong) UIImageView *imageView;
 
 - (IBAction)closeButtonPressed:(id)sender;
@@ -39,7 +39,7 @@
 @end
 
 
-@implementation BKTPopinControllerViewControllerNature1i
+@implementation BKTPopinControllerViewControllerNature2i
 
 
 @synthesize scrollView = _scrollView;

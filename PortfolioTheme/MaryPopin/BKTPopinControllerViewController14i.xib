@@ -95,7 +95,8 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhI-hf-ORI">
                                     <rect key="frame" x="8" y="115" width="287" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">• Raptor means to "seize or grasp".• Their feathers, beaks and talons are designed to help them catch their prey.</string>
+                                    <string key="text">• Raptor means to "seize or grasp".
+• Their feathers, beaks and talons are designed to help them catch their prey.</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -114,7 +115,12 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rR-bJ-LOc">
                                     <rect key="frame" x="28" y="238" width="258" height="370"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <mutableString key="text">Our raptors are housed outdoors, and you can walk right up to their enclosures seven days a week during daylight hours. Discover the origin of their name "raptor" which means "to seize or grasp" with their powerful feet and talons. Observe their feathers, beaks and so much more. Please note: when outdoor temperatures dip below 0 Fahrenheit, many birds will be removed from their enclosures as a cautionary measure.Most of our raptors have been adopted from the River Raisin Raptor Center education program. Our regal and beautiful birds have each suffered a permanent injury that makes them unable to survive in the wild, where even a seemingly small injury spells the difference between predatory dominance and certain death.</mutableString>
+                                    <string key="text">Our raptors are housed outdoors, and you can walk right up to their enclosures seven days a week during daylight hours. Discover the origin of their name "raptor" which means "to seize or grasp" with their powerful feet and talons. Observe their feathers, beaks and so much more. Please note: when outdoor temperatures dip below 0 Fahrenheit, many birds will be removed from their enclosures as a cautionary measure.
+
+Most of our raptors have been adopted from the River Raisin Raptor Center education program. Our regal and beautiful birds have each suffered a 
+permanent injury that makes them unable to survive in the wild, where even a 
+seemingly small injury spells the difference between predatory dominance and 
+certain death.</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -134,6 +140,14 @@
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HdO-PO-YfR">
+                                    <rect key="frame" x="5" y="681" width="310" height="289"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="presentPopinPressed1:" destination="-1" eventType="touchUpInside" id="aQE-WP-VGK"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </view>

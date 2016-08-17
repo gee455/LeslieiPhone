@@ -28,6 +28,9 @@
 //#import "SWRevealViewController.h"
 #import "SCLAlertView.h"
 
+//Popin Content
+#import "BKTPopin2ControllerViewController_QR1i.h"
+
 @interface BKTPopinControllerViewController14i ()
 @property (nonatomic, strong) UIImageView *imageView;
 
@@ -69,6 +72,19 @@
     // Tell the scroll view the size of the contents
     self.scrollView.contentSize = image.size;
   
+}
+
+- (IBAction)presentPopinPressed1:(id)sender
+{
+    BKTPopin2ControllerViewController_QR1i *popin = [[BKTPopin2ControllerViewController_QR1i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

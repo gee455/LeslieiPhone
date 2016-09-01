@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 
 #import "BKTPopin2ControllerViewController_QR1i.h"
-#import "BKTPopin2ControllerViewController_QR1_answer.h"
+#import "BKTPopin2ControllerViewController_QR1i_answer.h"
 
 #import "UIViewController+MaryPopin.h"
 
@@ -135,7 +135,7 @@
     
     if ([qrCode isEqual: @"a"]) {
         
-        BKTPopin2ControllerViewController_QR1_answer *popin1 = [[BKTPopin2ControllerViewController_QR1_answer alloc] init];
+        BKTPopin2ControllerViewController_QR1i_answer *popin1 = [[BKTPopin2ControllerViewController_QR1i_answer alloc] init];
         
         //Disable auto dismiss and removed semi-transparent background
         [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];

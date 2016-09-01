@@ -72,9 +72,12 @@
 #define kRegularGeographyClassMapID @"examples.map-zmy97flj"
 #define kRetinaGeographyClassMapID  @"examples.1fjyxmhi"
 
+//Google Maps
+#import <GoogleMaps/GoogleMaps.h>
 
 
-@interface MainViewController ()
+//Google Maps GMSMapViewDelegate
+@interface MainViewController ()<GMSMapViewDelegate>
 
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
@@ -96,6 +99,11 @@
 @end
 
 @implementation MainViewController
+
+//Google Maps
+GMSMarker *_natureHouse;
+UIImageView *_natureView;
+UIView *_contentView;
 
 @synthesize mapView;
 @synthesize activeFilterTypes;
@@ -366,6 +374,57 @@
     [self.scrollView addGestureRecognizer:twoFingerTapRecognizer];
 	
 }
+
+//Google Maps
+- (void)loadView {
+    // Create a GMSCameraPosition that tells the map to display the
+    // coordinate -33.86,151.20 at zoom level 6.
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:42.300999
+                                                            longitude:-83.730207
+                                                                 zoom:11];
+    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView.myLocationEnabled = YES;
+    self.view = mapView;
+    
+    // Creates a marker in the center of the map.
+//    GMSMarker *marker = [[GMSMarker alloc] init];
+//    marker.position = CLLocationCoordinate2DMake(42.301035, -83.729661);
+//    marker.title = @"Sydney";
+//    marker.snippet = @"Australia";
+//    marker.map = mapView;
+    
+    
+    UIImage *house = [UIImage imageNamed:@"pin2"];
+    house = [house imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    _natureView = [[UIImageView alloc] initWithImage:house];
+    //_natureView.tintColor = [UIColor redColor];
+    
+    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(42.30118, -83.72976);
+    _natureHouse = [GMSMarker markerWithPosition:position];
+    _natureHouse.icon = [GMSMarker markerImageWithColor:[UIColor blackColor]];
+    _natureHouse.title = @"Nature House";
+    _natureHouse.snippet = @"Built on the footprint of Dr. Leslie’s laboratory in 2000, the DTE Energy Nature House displays the sustainable use of resources through energy and material conserving features. ";
+    _natureHouse.iconView = _natureView;
+    _natureHouse.tracksViewChanges = YES;
+    _natureHouse.icon = [UIImage imageNamed:@"pinN"];
+    NSLog(@"natureHouse: %@", _natureHouse);
+    _natureHouse.map = mapView;
+    
+    _contentView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pin2"]];
+    
+    
+    mapView.delegate = self;
+    self.view = mapView;
+}
+
+
+//Google Maps
+//- (UIView *)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
+//    if (marker == _natureHouse) {
+//        return _contentView;
+//    }
+//    return nil;
+//}
 
 -(void)viewDidAppear:(BOOL)animated{
     

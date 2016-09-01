@@ -17,9 +17,21 @@
 		0C17261B1A0EF0A900D55FF6 /* BKTPopinControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1726191A0EF0A900D55FF6 /* BKTPopinControllerViewController.xib */; };
 		0C4A05C21A032DEB0087ED29 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A05C11A032DEB0087ED29 /* qr.png */; };
 		0C4A05C41A032F190087ED29 /* scavenger.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A05C31A032F190087ED29 /* scavenger.png */; };
+		0C6EC9CE1D6F71E4001259DA /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9CB1D6F71E3001259DA /* GoogleMapsBase.framework */; };
+		0C6EC9CF1D6F71E4001259DA /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9CC1D6F71E3001259DA /* GoogleMaps.framework */; };
+		0C6EC9D01D6F71E4001259DA /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9CD1D6F71E4001259DA /* GoogleMapsCore.framework */; };
+		0C6EC9D21D6F7209001259DA /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C6EC9D11D6F7209001259DA /* GoogleMaps.bundle */; };
+		0C6EC9D41D6F725A001259DA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9D31D6F725A001259DA /* CoreBluetooth.framework */; };
+		0C6EC9D61D6F7287001259DA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9D51D6F7287001259DA /* OpenGLES.framework */; };
+		0C6EC9D81D6F7291001259DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9D71D6F7291001259DA /* libz.tbd */; };
+		0C6EC9DA1D6F729B001259DA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9D91D6F729B001259DA /* libc++.tbd */; };
+		0C6EC9DC1D6F72AC001259DA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9DB1D6F72AB001259DA /* ImageIO.framework */; };
+		0C6EC9DE1D6F72B3001259DA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9DD1D6F72B3001259DA /* GLKit.framework */; };
+		0C6EC9E01D6F72D2001259DA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6EC9DF1D6F72D2001259DA /* Accelerate.framework */; };
 		0C700E261A0EFD2E00526D7F /* crossHair.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C700E251A0EFD2E00526D7F /* crossHair.png */; };
 		0C700E281A0EFF7500526D7F /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C700E271A0EFF7500526D7F /* search.png */; };
 		0C700E2A1A0F03AC00526D7F /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C700E291A0F03AC00526D7F /* map.png */; };
+		0CB680921D73FFA60069EA6F /* AboutViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB680901D73FFA60069EA6F /* AboutViewControlleriPhone.m */; };
 		0CC45E9F1A0DCFCB00CD4618 /* MYBlurIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC45E9C1A0DCFCB00CD4618 /* MYBlurIntroductionView.m */; };
 		0CC45EA01A0DCFCB00CD4618 /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC45E9E1A0DCFCB00CD4618 /* MYIntroductionPanel.m */; };
 		0CC45EC21A0DD08B00CD4618 /* TestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC45EC01A0DD08B00CD4618 /* TestHeader.xib */; };
@@ -32,6 +44,9 @@
 		0CC45EF01A0DD92B00CD4618 /* Intro_Screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC45EEC1A0DD92B00CD4618 /* Intro_Screen3.png */; };
 		0CC45EF31A0DD9E200CD4618 /* homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC45EF21A0DD9E200CD4618 /* homescreen.png */; };
 		0CC45EF61A0E636400CD4618 /* CritterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC45EF51A0E636400CD4618 /* CritterViewController.m */; };
+		0CCA58F51D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA58F41D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.m */; };
+		0CCA58F81D74C00400C360B2 /* BKTPopin2ControllerViewController_about2i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA58F71D74C00400C360B2 /* BKTPopin2ControllerViewController_about2i.xib */; };
+		0CCA58FA1D74C45700C360B2 /* getinvolved_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA58F91D74C45700C360B2 /* getinvolved_03.jpg */; };
 		0CE35E991A3D2A8500FB550D /* BKTPopinControllerViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE35E981A3D2A8500FB550D /* BKTPopinControllerViewController2.m */; };
 		130C360C19AF86360009EEA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130C360B19AF86360009EEA7 /* Foundation.framework */; };
 		130C360E19AF86360009EEA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130C360D19AF86360009EEA7 /* CoreGraphics.framework */; };
@@ -694,6 +709,11 @@
 		9B8247FE1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8247FC1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m */; };
 		9B8247FF1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8247FD1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib */; };
 		9B8248011D6412E9005FC41D /* QRpara_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248001D6412E9005FC41D /* QRpara_03.png */; };
+		9B8248051D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8248031D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m */; };
+		9B8248061D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248041D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib */; };
+		9B82480A1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */; };
+		9B82480B1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */; };
+		9B82480D1D64141E005FC41D /* QRanswer1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B82480C1D64141E005FC41D /* QRanswer1_03.png */; };
 		9BA8E5BF1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8E5BD1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.m */; };
 		9BA8E5C01A6875E00015152B /* BKTPopin2ControllerViewController_feature1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8E5BE1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.xib */; };
 		9BA8E5CF1A6876600015152B /* feature4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8E5C71A6876600015152B /* feature4@2x.png */; };
@@ -806,9 +826,22 @@
 		0C1726191A0EF0A900D55FF6 /* BKTPopinControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewController.xib; sourceTree = "<group>"; };
 		0C4A05C11A032DEB0087ED29 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
 		0C4A05C31A032F190087ED29 /* scavenger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scavenger.png; sourceTree = "<group>"; };
+		0C6EC9CB1D6F71E3001259DA /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		0C6EC9CC1D6F71E3001259DA /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		0C6EC9CD1D6F71E4001259DA /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		0C6EC9D11D6F7209001259DA /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		0C6EC9D31D6F725A001259DA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0C6EC9D51D6F7287001259DA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0C6EC9D71D6F7291001259DA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0C6EC9D91D6F729B001259DA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0C6EC9DB1D6F72AB001259DA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0C6EC9DD1D6F72B3001259DA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0C6EC9DF1D6F72D2001259DA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		0C700E251A0EFD2E00526D7F /* crossHair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crossHair.png; sourceTree = "<group>"; };
 		0C700E271A0EFF7500526D7F /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		0C700E291A0F03AC00526D7F /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		0CB680901D73FFA60069EA6F /* AboutViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewControlleriPhone.m; sourceTree = "<group>"; };
+		0CB680911D73FFA60069EA6F /* AboutViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewControlleriPhone.h; sourceTree = "<group>"; };
 		0CC45E9B1A0DCFCB00CD4618 /* MYBlurIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBlurIntroductionView.h; sourceTree = "<group>"; };
 		0CC45E9C1A0DCFCB00CD4618 /* MYBlurIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionView.m; sourceTree = "<group>"; };
 		0CC45E9D1A0DCFCB00CD4618 /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
@@ -825,6 +858,10 @@
 		0CC45EF21A0DD9E200CD4618 /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen.png; sourceTree = "<group>"; };
 		0CC45EF41A0E636400CD4618 /* CritterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CritterViewController.h; sourceTree = "<group>"; };
 		0CC45EF51A0E636400CD4618 /* CritterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CritterViewController.m; sourceTree = "<group>"; };
+		0CCA58F31D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTPopin2ControllerViewController_about2i.h; path = "Popin Content/BKTPopin2ControllerViewController_about2i.h"; sourceTree = "<group>"; };
+		0CCA58F41D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTPopin2ControllerViewController_about2i.m; path = "Popin Content/BKTPopin2ControllerViewController_about2i.m"; sourceTree = "<group>"; };
+		0CCA58F71D74C00400C360B2 /* BKTPopin2ControllerViewController_about2i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKTPopin2ControllerViewController_about2i.xib; path = "Popin Content/BKTPopin2ControllerViewController_about2i.xib"; sourceTree = "<group>"; };
+		0CCA58F91D74C45700C360B2 /* getinvolved_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = getinvolved_03.jpg; sourceTree = "<group>"; };
 		0CE35E971A3D2A8500FB550D /* BKTPopinControllerViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewController2.h; sourceTree = "<group>"; };
 		0CE35E981A3D2A8500FB550D /* BKTPopinControllerViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewController2.m; sourceTree = "<group>"; };
 		130C360819AF86360009EEA7 /* PortfolioTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortfolioTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1677,6 +1714,13 @@
 		9B8247FC1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR4i.m; sourceTree = "<group>"; };
 		9B8247FD1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR4i.xib; sourceTree = "<group>"; };
 		9B8248001D6412E9005FC41D /* QRpara_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRpara_03.png; sourceTree = "<group>"; };
+		9B8248021D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR4i_answer.h; sourceTree = "<group>"; };
+		9B8248031D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR4i_answer.m; sourceTree = "<group>"; };
+		9B8248041D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR4i_answer.xib; sourceTree = "<group>"; };
+		9B8248071D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR1i_answer.h; sourceTree = "<group>"; };
+		9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR1i_answer.m; sourceTree = "<group>"; };
+		9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR1i_answer.xib; sourceTree = "<group>"; };
+		9B82480C1D64141E005FC41D /* QRanswer1_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRanswer1_03.png; sourceTree = "<group>"; };
 		9BA8E5BC1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTPopin2ControllerViewController_feature1.h; path = "Popin Content/BKTPopin2ControllerViewController_feature1.h"; sourceTree = "<group>"; };
 		9BA8E5BD1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTPopin2ControllerViewController_feature1.m; path = "Popin Content/BKTPopin2ControllerViewController_feature1.m"; sourceTree = "<group>"; };
 		9BA8E5BE1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKTPopin2ControllerViewController_feature1.xib; path = "Popin Content/BKTPopin2ControllerViewController_feature1.xib"; sourceTree = "<group>"; };
@@ -1848,12 +1892,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6EC9E01D6F72D2001259DA /* Accelerate.framework in Frameworks */,
+				0C6EC9DE1D6F72B3001259DA /* GLKit.framework in Frameworks */,
+				0C6EC9DC1D6F72AC001259DA /* ImageIO.framework in Frameworks */,
+				0C6EC9DA1D6F729B001259DA /* libc++.tbd in Frameworks */,
+				0C6EC9D81D6F7291001259DA /* libz.tbd in Frameworks */,
+				0C6EC9D61D6F7287001259DA /* OpenGLES.framework in Frameworks */,
+				1326397B19B5C03E009159B7 /* QuartzCore.framework in Frameworks */,
+				1326397519B5C030009159B7 /* SystemConfiguration.framework in Frameworks */,
+				130C361019AF86360009EEA7 /* UIKit.framework in Frameworks */,
+				13F07EA519EBBC7300759C98 /* Security.framework in Frameworks */,
+				0C6EC9D41D6F725A001259DA /* CoreBluetooth.framework in Frameworks */,
+				1326397D19B5C042009159B7 /* AVFoundation.framework in Frameworks */,
+				0C6EC9CF1D6F71E4001259DA /* GoogleMaps.framework in Frameworks */,
 				9BCB61CE1A58A77700119235 /* libMapbox.a in Frameworks */,
 				1326398D19B5C06A009159B7 /* libsqlite3.dylib in Frameworks */,
 				134BAB0F19ED3F640063976B /* MediaPlayer.framework in Frameworks */,
 				13F07EA919EBBC8500759C98 /* CoreLocation.framework in Frameworks */,
 				13F07EA719EBBC7700759C98 /* MobileCoreServices.framework in Frameworks */,
-				13F07EA519EBBC7300759C98 /* Security.framework in Frameworks */,
 				1326397919B5C039009159B7 /* Accounts.framework in Frameworks */,
 				1326398F19B5C06D009159B7 /* libz.dylib in Frameworks */,
 				1326398719B5C063009159B7 /* CoreAudio.framework in Frameworks */,
@@ -1863,12 +1919,10 @@
 				1326398A19B5C063009159B7 /* CoreTelephony.framework in Frameworks */,
 				1326398B19B5C063009159B7 /* CoreText.framework in Frameworks */,
 				130C360E19AF86360009EEA7 /* CoreGraphics.framework in Frameworks */,
+				0C6EC9D01D6F71E4001259DA /* GoogleMapsCore.framework in Frameworks */,
 				1326398119B5C04F009159B7 /* MessageUI.framework in Frameworks */,
 				1326397F19B5C048009159B7 /* AudioToolbox.framework in Frameworks */,
-				1326397D19B5C042009159B7 /* AVFoundation.framework in Frameworks */,
-				1326397B19B5C03E009159B7 /* QuartzCore.framework in Frameworks */,
 				1326397719B5C034009159B7 /* CFNetwork.framework in Frameworks */,
-				1326397519B5C030009159B7 /* SystemConfiguration.framework in Frameworks */,
 				13F07EA119EBB91D00759C98 /* Bolts.framework in Frameworks */,
 				1326397319B5C02D009159B7 /* iAd.framework in Frameworks */,
 				1326397119B5C028009159B7 /* AdSupport.framework in Frameworks */,
@@ -1876,7 +1930,6 @@
 				1326396D19B5C021009159B7 /* StoreKit.framework in Frameworks */,
 				1326396B19B5C01D009159B7 /* GameKit.framework in Frameworks */,
 				1326396619B5BFF8009159B7 /* libFlurryAds_5.3.0.a in Frameworks */,
-				130C361019AF86360009EEA7 /* UIKit.framework in Frameworks */,
 				1326395D19B5BFF8009159B7 /* RevMobAds.framework in Frameworks */,
 				1326395E19B5BFF8009159B7 /* VungleSDK.framework in Frameworks */,
 				130C360C19AF86360009EEA7 /* Foundation.framework in Frameworks */,
@@ -1884,6 +1937,7 @@
 				1326396519B5BFF8009159B7 /* libFlurry_5.3.0.a in Frameworks */,
 				1326396319B5BFF8009159B7 /* libChartboost.a in Frameworks */,
 				1326396719B5BFF8009159B7 /* libAppLovinSdk.a in Frameworks */,
+				0C6EC9CE1D6F71E4001259DA /* GoogleMapsBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1995,6 +2049,15 @@
 			path = MaryPopin;
 			sourceTree = "<group>";
 		};
+		0CB680931D73FFB90069EA6F /* iPhone Main Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0CB680911D73FFA60069EA6F /* AboutViewControlleriPhone.h */,
+				0CB680901D73FFA60069EA6F /* AboutViewControlleriPhone.m */,
+			);
+			name = "iPhone Main Screens";
+			sourceTree = "<group>";
+		};
 		0CC45E8E1A0DC7DA00CD4618 /* Introduction Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2031,6 +2094,16 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		0CCA58F61D74BFAA00C360B2 /* iPhone Version */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA58F31D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.h */,
+				0CCA58F41D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.m */,
+				0CCA58F71D74C00400C360B2 /* BKTPopin2ControllerViewController_about2i.xib */,
+			);
+			name = "iPhone Version";
+			sourceTree = "<group>";
+		};
 		130C35FF19AF86360009EEA7 = {
 			isa = PBXGroup;
 			children = (
@@ -2054,6 +2127,17 @@
 		130C360A19AF86360009EEA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C6EC9DF1D6F72D2001259DA /* Accelerate.framework */,
+				0C6EC9DD1D6F72B3001259DA /* GLKit.framework */,
+				0C6EC9DB1D6F72AB001259DA /* ImageIO.framework */,
+				0C6EC9D91D6F729B001259DA /* libc++.tbd */,
+				0C6EC9D71D6F7291001259DA /* libz.tbd */,
+				0C6EC9D51D6F7287001259DA /* OpenGLES.framework */,
+				0C6EC9D31D6F725A001259DA /* CoreBluetooth.framework */,
+				0C6EC9D11D6F7209001259DA /* GoogleMaps.bundle */,
+				0C6EC9CB1D6F71E3001259DA /* GoogleMapsBase.framework */,
+				0C6EC9CC1D6F71E3001259DA /* GoogleMaps.framework */,
+				0C6EC9CD1D6F71E4001259DA /* GoogleMapsCore.framework */,
 				134BAB0E19ED3F640063976B /* MediaPlayer.framework */,
 				13F07EA819EBBC8500759C98 /* CoreLocation.framework */,
 				13F07EA619EBBC7700759C98 /* MobileCoreServices.framework */,
@@ -2111,6 +2195,7 @@
 				9B4460211C8FBD2A00085567 /* Main_iPad.storyboard */,
 				9B4460231C8FBD5500085567 /* MainViewController.h */,
 				9B4460261C8FBE0F00085567 /* MainViewController.m */,
+				9B91D2041D78B90100197D3D /* Google Maps */,
 				9B4460031C8FBBFD00085567 /* photo1.png */,
 				130C362319AF86360009EEA7 /* ViewController.h */,
 				130C362419AF86360009EEA7 /* ViewController.m */,
@@ -2131,6 +2216,7 @@
 				139500BC19B49B2700D0E151 /* SideBarViewController.m */,
 				139500E819B4B7EC00D0E151 /* PortfolioViewController.h */,
 				139500E919B4B7EC00D0E151 /* PortfolioViewController.m */,
+				0CB680931D73FFB90069EA6F /* iPhone Main Screens */,
 				131AF77719B58BF000379D26 /* AboutViewController.h */,
 				131AF77819B58BF000379D26 /* AboutViewController.m */,
 				131AF77A19B58BFC00379D26 /* CollectionViewController.h */,
@@ -2920,6 +3006,12 @@
 				9B8247FB1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.h */,
 				9B8247FC1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m */,
 				9B8247FD1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib */,
+				9B8248071D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.h */,
+				9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */,
+				9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */,
+				9B8248021D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.h */,
+				9B8248031D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m */,
+				9B8248041D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib */,
 			);
 			name = "iPhone Versions";
 			sourceTree = "<group>";
@@ -3013,6 +3105,7 @@
 				9B8247F21D640C71005FC41D /* QRfalcon_03.png */,
 				9B8247F91D64126D005FC41D /* QRowl_03.png */,
 				9B8248001D6412E9005FC41D /* QRpara_03.png */,
+				9B82480C1D64141E005FC41D /* QRanswer1_03.png */,
 			);
 			name = "Iphone Images";
 			sourceTree = "<group>";
@@ -3107,6 +3200,13 @@
 				9BA8E5E01A6877190015152B /* BKTPopin2ControllerViewController_feature4.xib */,
 			);
 			name = "Map Popins";
+			sourceTree = "<group>";
+		};
+		9B91D2041D78B90100197D3D /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Google Maps";
 			sourceTree = "<group>";
 		};
 		9BA8E5C11A6875E60015152B /* Trail */ = {
@@ -3299,6 +3399,7 @@
 		9BFF747D1A57641D00DAAF02 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0CCA58F91D74C45700C360B2 /* getinvolved_03.jpg */,
 				9B5218C91BBB5A5100A1D03B /* feature1.png */,
 				9B5218CA1BBB5A5100A1D03B /* feature1@2x.png */,
 				9B5218CD1BBB5A8900A1D03B /* feature2.png */,
@@ -3372,6 +3473,7 @@
 		9BFF74951A57695200DAAF02 /* About Right */ = {
 			isa = PBXGroup;
 			children = (
+				0CCA58F61D74BFAA00C360B2 /* iPhone Version */,
 				9BFF74901A57694C00DAAF02 /* BKTPopin2ControllerViewController_about2.h */,
 				9BFF74911A57694C00DAAF02 /* BKTPopin2ControllerViewController_about2.m */,
 				9BFF74921A57694C00DAAF02 /* BKTPopin2ControllerViewController_about2.xib */,
@@ -3640,6 +3742,7 @@
 				9B57AFDA1A683A82006B281D /* blackcap.wav in Resources */,
 				9B5218D81BBB5D7F00A1D03B /* QRanswer1@2x.png in Resources */,
 				9B4461771C960FF100085567 /* spring1.png in Resources */,
+				9B82480D1D64141E005FC41D /* QRanswer1_03.png in Resources */,
 				9B44618C1C9612DD00085567 /* dragonfly.png in Resources */,
 				9BCB614C1A57990100119235 /* critter4.png in Resources */,
 				9B4461151C910DB900085567 /* pinN.png in Resources */,
@@ -3707,6 +3810,7 @@
 				9B57AF721A65DF98006B281D /* BKTPopin2ControllerViewController_QR4.xib in Resources */,
 				9B44611B1C910DB900085567 /* pin8.png in Resources */,
 				9B4461BE1C96169100085567 /* AnimalTracks1.png in Resources */,
+				0CCA58FA1D74C45700C360B2 /* getinvolved_03.jpg in Resources */,
 				139500C519B49FAE00D0E151 /* sidebar.plist in Resources */,
 				9B57AF771A65DFD5006B281D /* BKTPopin2ControllerViewController_QR4_answer.xib in Resources */,
 				9B5218BF1BBB588C00A1D03B /* ourreach.png in Resources */,
@@ -3755,6 +3859,7 @@
 				134B26D419C862CD0056D4F1 /* LinkedIn.png in Resources */,
 				9B4461BC1C96169100085567 /* AnimalTracks2.png in Resources */,
 				9BCB61081A5783B600119235 /* BKTPopin2ControllerViewController_nature3.xib in Resources */,
+				0CCA58F81D74C00400C360B2 /* BKTPopin2ControllerViewController_about2i.xib in Resources */,
 				9B57AFE81A684099006B281D /* chorusfrog.wav in Resources */,
 				9BBC26751B55E10800CA10FD /* About.mp4 in Resources */,
 				9B4461491C95F37C00085567 /* Caterpillar@3x.png in Resources */,
@@ -3873,6 +3978,7 @@
 				9BA8E5E71A68B63C0015152B /* feature3.png in Resources */,
 				9B82473E1D5C20C1005FC41D /* BKTPopinControllerViewController14i.xib in Resources */,
 				9B4461BB1C96169100085567 /* AnimalNest.png in Resources */,
+				9B8248061D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib in Resources */,
 				13E40FAB19E3E43300B95175 /* icon_76x76.png in Resources */,
 				9B445FF21C8FBB6F00085567 /* post6@2x.png in Resources */,
 				9B5219171BBDD3DA00A1D03B /* mapView.html in Resources */,
@@ -3883,6 +3989,7 @@
 				9B8247041D5C12D6005FC41D /* BKTPopinControllerViewController10i.xib in Resources */,
 				9BCB61341A57960200119235 /* critter1@2x.png in Resources */,
 				9B8246C91D5A94D3005FC41D /* BKTPopinControllerViewController5i.xib in Resources */,
+				9B82480B1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib in Resources */,
 				9B4460151C8FBCE700085567 /* BKTPopinControllerViewController4.xib in Resources */,
 				9B8246BC1D5A8654005FC41D /* BKTPopinControllerViewController4i.xib in Resources */,
 				9B4460A11C90F68100085567 /* BKTPopin2ControllerViewController_map8.xib in Resources */,
@@ -4048,6 +4155,7 @@
 				9B8247191D5C1797005FC41D /* post12_01.png in Resources */,
 				9B8247551D5C2303005FC41D /* critterHouse_18.png in Resources */,
 				9B82478D1D5CD1CE005FC41D /* BKTPopinControllerViewControllerCritter1i.xib in Resources */,
+				0C6EC9D21D6F7209001259DA /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4094,6 +4202,7 @@
 				134B26BB19C823D00056D4F1 /* AFURLConnectionOperation.m in Sources */,
 				9B44612C1C94CF5E00085567 /* BKTPopin2ControllerViewController_map18.m in Sources */,
 				9B8247121D5C1440005FC41D /* BKTPopinControllerViewController11i.m in Sources */,
+				9B82480A1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m in Sources */,
 				9B44615B1C960AE200085567 /* HuntViewController1.m in Sources */,
 				131AF77F19B58C0800379D26 /* ProductsViewController.m in Sources */,
 				139500EA19B4B7EC00D0E151 /* PortfolioViewController.m in Sources */,
@@ -4102,6 +4211,7 @@
 				1326395F19B5BFF8009159B7 /* MobileBuilder.m in Sources */,
 				13BB385619C71C27004F5BF3 /* DDProgressView.m in Sources */,
 				13B3DFDE19FF7A8C0005557F /* FeedItem.m in Sources */,
+				9B8248051D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */,
 				0C1726011A0E77FA00D55FF6 /* SCLAlertViewResponder.m in Sources */,
 				0C1726041A0E77FA00D55FF6 /* UIImage+ImageEffects.m in Sources */,
 				134BAB0619ED104B0063976B /* PhotoViewController.m in Sources */,
@@ -4155,6 +4265,7 @@
 				9B4460AC1C90F68100085567 /* BKTPopin2ControllerViewController_map14.m in Sources */,
 				13B3DFFC19FF7AB00005557F /* NSString+HTML.m in Sources */,
 				9B82477E1D5C385A005FC41D /* BKTPopinControllerViewControllerUnlock1i.m in Sources */,
+				0CCA58F51D74BFA500C360B2 /* BKTPopin2ControllerViewController_about2i.m in Sources */,
 				9BCB61591A579B5800119235 /* BKTPopin2ControllerViewController_unlock1.m in Sources */,
 				13B3DFF919FF7AB00005557F /* MWFeedParser.m in Sources */,
 				9B57AF9E1A6603DF006B281D /* BKTPopin2ControllerViewController_trail4.m in Sources */,
@@ -4199,6 +4310,7 @@
 				9BCB61481A57968400119235 /* BKTPopin2ControllerViewController_critter4.m in Sources */,
 				9BCB610C1A5783E900119235 /* BKTPopin2ControllerViewController_nature4.m in Sources */,
 				9B8247931D5CD268005FC41D /* BKTPopinControllerViewControllerCritter2i.m in Sources */,
+				0CB680921D73FFA60069EA6F /* AboutViewControlleriPhone.m in Sources */,
 				0CC45EC71A0DD09C00CD4618 /* MYCustomPanel.m in Sources */,
 				13B3DFDB19FF7A3E0005557F /* HomeModel.m in Sources */,
 				9BCB61071A5783B600119235 /* BKTPopin2ControllerViewController_nature3.m in Sources */,

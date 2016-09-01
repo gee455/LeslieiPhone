@@ -10,6 +10,7 @@
 #import "PortfolioViewController.h"
 #import "SWRevealViewController.h"
 #import "AboutViewController.h"
+#import "AboutViewControlleriPhone.h"
 #import "CollectionViewController.h"
 #import "ProductsViewController.h"
 #import "BlogPostViewController.h"
@@ -139,7 +140,7 @@
     else if(row == 1)
     {
         UIStoryboard *storyboard = self.storyboard;
-        newFrontController = [storyboard instantiateViewControllerWithIdentifier:@"about"];
+        newFrontController = [storyboard instantiateViewControllerWithIdentifier:@"about2"];
     }
     else if(row == 2)
     {

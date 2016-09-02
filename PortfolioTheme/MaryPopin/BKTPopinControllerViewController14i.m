@@ -71,6 +71,10 @@
     
     // Tell the scroll view the size of the contents
     self.scrollView.contentSize = image.size;
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    NSURL *url = [NSURL URLWithString:@"https://a.tiles.mapbox.com/v4/cgee.klegg5i6/page.html?access_token=pk.eyJ1IjoiY2dlZSIsImEiOiJnVVJGYmpBIn0.QEv8onciTixxHA--hpOGMA#18/42.30065/-83.72852"];
+    [self.myWebView loadRequest:[NSURLRequest requestWithURL:url]];
   
 }
 

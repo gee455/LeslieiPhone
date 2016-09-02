@@ -24,8 +24,12 @@
 {
     IBOutlet UINavigationItem* _topBar;
     IBOutlet UIImageView* _background;
+    __weak IBOutlet UIWebView *webView;
+    
 }
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
+
 
 //QR Code
 @property (weak, nonatomic) IBOutlet UIView *viewPreview;

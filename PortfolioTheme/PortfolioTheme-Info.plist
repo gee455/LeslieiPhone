@@ -28,6 +28,16 @@
 	<string>1.51</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>mapbox.com</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app would like to use your current location</string>
 	<key>UIMainStoryboardFile</key>

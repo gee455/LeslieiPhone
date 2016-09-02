@@ -28,5 +28,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *critterBtn;
 - (IBAction)showSuccess:(id)sender;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIWebView *myWebView;
+
 
 @end

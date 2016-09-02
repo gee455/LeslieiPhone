@@ -494,6 +494,9 @@
 		9B4BCBA31A59FB4700B61094 /* Email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BCBA21A59FB4700B61094 /* Email@2x.png */; };
 		9B4BCBA61A59FC0900B61094 /* Google+.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BCBA41A59FC0900B61094 /* Google+.png */; };
 		9B4BCBA71A59FC0900B61094 /* Google+@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BCBA51A59FC0900B61094 /* Google+@2x.png */; };
+		9B506CFF1D7923ED00439243 /* trailMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B506CFD1D7923ED00439243 /* trailMap.png */; };
+		9B506D001D7923ED00439243 /* trailMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B506CFE1D7923ED00439243 /* trailMap@2x.png */; };
+		9B506D031D79243B00439243 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B506D021D79243B00439243 /* MapViewController.m */; };
 		9B5218BA1BBB56DD00A1D03B /* Intro_Screen3_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5218B91BBB56DD00A1D03B /* Intro_Screen3_alt.png */; };
 		9B5218BC1BBB576F00A1D03B /* Intro_Screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5218BB1BBB576F00A1D03B /* Intro_Screen2.png */; };
 		9B5218BF1BBB588C00A1D03B /* ourreach.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5218BD1BBB588C00A1D03B /* ourreach.png */; };
@@ -714,6 +717,7 @@
 		9B82480A1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */; };
 		9B82480B1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */; };
 		9B82480D1D64141E005FC41D /* QRanswer1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B82480C1D64141E005FC41D /* QRanswer1_03.png */; };
+		9B91D2081D78BDAA00197D3D /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B91D2071D78BDAA00197D3D /* InfoWindow.xib */; };
 		9BA8E5BF1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8E5BD1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.m */; };
 		9BA8E5C01A6875E00015152B /* BKTPopin2ControllerViewController_feature1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8E5BE1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.xib */; };
 		9BA8E5CF1A6876600015152B /* feature4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8E5C71A6876600015152B /* feature4@2x.png */; };
@@ -1459,6 +1463,10 @@
 		9B4BCBA21A59FB4700B61094 /* Email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Email@2x.png"; sourceTree = "<group>"; };
 		9B4BCBA41A59FC0900B61094 /* Google+.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Google+.png"; sourceTree = "<group>"; };
 		9B4BCBA51A59FC0900B61094 /* Google+@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Google+@2x.png"; sourceTree = "<group>"; };
+		9B506CFD1D7923ED00439243 /* trailMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trailMap.png; sourceTree = "<group>"; };
+		9B506CFE1D7923ED00439243 /* trailMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trailMap@2x.png"; sourceTree = "<group>"; };
+		9B506D011D79243B00439243 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = MaryPopin/MapViewController.h; sourceTree = "<group>"; };
+		9B506D021D79243B00439243 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = MaryPopin/MapViewController.m; sourceTree = "<group>"; };
 		9B5218B91BBB56DD00A1D03B /* Intro_Screen3_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro_Screen3_alt.png; sourceTree = "<group>"; };
 		9B5218BB1BBB576F00A1D03B /* Intro_Screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro_Screen2.png; sourceTree = "<group>"; };
 		9B5218BD1BBB588C00A1D03B /* ourreach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ourreach.png; sourceTree = "<group>"; };
@@ -1721,6 +1729,7 @@
 		9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR1i_answer.m; sourceTree = "<group>"; };
 		9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR1i_answer.xib; sourceTree = "<group>"; };
 		9B82480C1D64141E005FC41D /* QRanswer1_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRanswer1_03.png; sourceTree = "<group>"; };
+		9B91D2071D78BDAA00197D3D /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoWindow.xib; path = MaryPopin/InfoWindow.xib; sourceTree = "<group>"; };
 		9BA8E5BC1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTPopin2ControllerViewController_feature1.h; path = "Popin Content/BKTPopin2ControllerViewController_feature1.h"; sourceTree = "<group>"; };
 		9BA8E5BD1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTPopin2ControllerViewController_feature1.m; path = "Popin Content/BKTPopin2ControllerViewController_feature1.m"; sourceTree = "<group>"; };
 		9BA8E5BE1A6875E00015152B /* BKTPopin2ControllerViewController_feature1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKTPopin2ControllerViewController_feature1.xib; path = "Popin Content/BKTPopin2ControllerViewController_feature1.xib"; sourceTree = "<group>"; };
@@ -3205,6 +3214,11 @@
 		9B91D2041D78B90100197D3D /* Google Maps */ = {
 			isa = PBXGroup;
 			children = (
+				9B506CFD1D7923ED00439243 /* trailMap.png */,
+				9B506CFE1D7923ED00439243 /* trailMap@2x.png */,
+				9B91D2071D78BDAA00197D3D /* InfoWindow.xib */,
+				9B506D011D79243B00439243 /* MapViewController.h */,
+				9B506D021D79243B00439243 /* MapViewController.m */,
 			);
 			name = "Google Maps";
 			sourceTree = "<group>";
@@ -3620,6 +3634,7 @@
 				13E40F9E19E3E43300B95175 /* icon_114x114.png in Resources */,
 				9B82471C1D5C1797005FC41D /* post12_11.png in Resources */,
 				9B44601B1C8FBCE700085567 /* BKTPopinControllerViewController10.xib in Resources */,
+				9B91D2081D78BDAA00197D3D /* InfoWindow.xib in Resources */,
 				134B26DC19C867710056D4F1 /* testet1.png in Resources */,
 				9B4460681C90F45300085567 /* critter@2x.png in Resources */,
 				9B8246D61D5C0563005FC41D /* post7_01.png in Resources */,
@@ -3882,6 +3897,7 @@
 				9B5218CC1BBB5A5100A1D03B /* feature1@2x.png in Resources */,
 				9B5219151BBB7ABB00A1D03B /* RaptorVideo.mov in Resources */,
 				9B8246D71D5C0563005FC41D /* post7_04.png in Resources */,
+				9B506D001D7923ED00439243 /* trailMap@2x.png in Resources */,
 				0CC45EC81A0DD09C00CD4618 /* MYCustomPanel.xib in Resources */,
 				9B8247461D5C22F9005FC41D /* raptorCage_06.png in Resources */,
 				9B4461B81C96169100085567 /* AnimalTracks1@2x.png in Resources */,
@@ -4029,6 +4045,7 @@
 				9B4460631C90F45300085567 /* garden.png in Resources */,
 				9B4461891C9612DD00085567 /* turtle.png in Resources */,
 				9B44605C1C90F45300085567 /* rapt.png in Resources */,
+				9B506CFF1D7923ED00439243 /* trailMap.png in Resources */,
 				9B4460641C90F45300085567 /* garden@2x.png in Resources */,
 				9B4461571C95F37C00085567 /* NorthernCardinal.png in Resources */,
 				9B8246F71D5C0B8F005FC41D /* BKTPopinControllerViewController9i.xib in Resources */,
@@ -4253,6 +4270,7 @@
 				134B26B719C823D00056D4F1 /* AFHTTPRequestOperationManager.m in Sources */,
 				9B4BCBA01A59A05D00B61094 /* BKTPopin2ControllerViewController_QR3_answer.m in Sources */,
 				9B8247F01D640BF3005FC41D /* BKTPopin2ControllerViewController_QR2i.m in Sources */,
+				9B506D031D79243B00439243 /* MapViewController.m in Sources */,
 				1372212D19E27AF600762624 /* SubProductsViewController.m in Sources */,
 				134B26B819C823D00056D4F1 /* AFHTTPSessionManager.m in Sources */,
 				9B4460AA1C90F68100085567 /* BKTPopin2ControllerViewController_map13.m in Sources */,

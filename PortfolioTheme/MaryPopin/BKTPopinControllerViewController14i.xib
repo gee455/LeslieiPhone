@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKTPopinControllerViewController14i">
             <connections>
                 <outlet property="Content" destination="T2Q-pi-qVl" id="Tut-i7-12Q"/>
+                <outlet property="myWebView" destination="Xix-G7-bsC" id="4mr-om-0MP"/>
                 <outlet property="scrollView" destination="h69-Rk-6Ww" id="8Of-RB-Qiv"/>
                 <outlet property="view" destination="1" id="yTb-ML-RXb"/>
             </connections>
@@ -148,6 +149,11 @@ certain death.</string>
                                         <action selector="presentPopinPressed1:" destination="-1" eventType="touchUpInside" id="aQE-WP-VGK"/>
                                     </connections>
                                 </button>
+                                <webView contentMode="scaleToFill" scalesPageToFit="YES" id="Xix-G7-bsC">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="499"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                </webView>
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </view>

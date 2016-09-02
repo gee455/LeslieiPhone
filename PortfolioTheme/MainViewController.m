@@ -72,12 +72,11 @@
 #define kRegularGeographyClassMapID @"examples.map-zmy97flj"
 #define kRetinaGeographyClassMapID  @"examples.1fjyxmhi"
 
-//Google Maps
-#import <GoogleMaps/GoogleMaps.h>
+//iPad vs iPhone Detect
+#define IDIOM    UI_USER_INTERFACE_IDIOM()
+#define IPAD     UIUserInterfaceIdiomPad
 
-
-//Google Maps GMSMapViewDelegate
-@interface MainViewController ()<GMSMapViewDelegate>
+@interface MainViewController ()
 
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
@@ -100,11 +99,6 @@
 
 @implementation MainViewController
 
-//Google Maps
-GMSMarker *_natureHouse;
-UIImageView *_natureView;
-UIView *_contentView;
-
 @synthesize mapView;
 @synthesize activeFilterTypes;
 @synthesize wv;
@@ -125,11 +119,11 @@ UIView *_contentView;
     //self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:nil action:nil];
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:nil action:nil];
-
-
+    
+    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
-
+    
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
@@ -137,7 +131,7 @@ UIView *_contentView;
     //self.navigationItem.leftBarButtonItem = _sidebarButton;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self.revealViewController action:@selector(revealToggle:)];
-
+    
     self.navigationController.navigationBar.translucent = YES;
     
     // Set the gesture
@@ -148,10 +142,12 @@ UIView *_contentView;
                                                  blue:44/255.0
                                                 alpha:1.0];
     
+
+    
     //QR Code
     // Initially make the captureSession object nil.
     _captureSession = nil;
-	
+    
     // Begin loading the sound effect so to have it ready for playback when it's needed.
     NSError *error;
     
@@ -171,7 +167,7 @@ UIView *_contentView;
     _captureSession = [[AVCaptureSession alloc] init];
     // Set the input device on the capture session.
     [_captureSession addInput:input];
-	
+    
     // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
     AVCaptureMetadataOutput *captureMetadataOutput = [[AVCaptureMetadataOutput alloc] init];
     [_captureSession addOutput:captureMetadataOutput];
@@ -207,12 +203,12 @@ UIView *_contentView;
     [self.imageView addSubview: button];
     
     //Pin #2 Critter House (C)
-//    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button1 setBackgroundImage:[UIImage imageNamed:@"pinC"] forState:UIControlStateNormal];
-//    button1.frame = CGRectMake(422.0, 368.0, 30.0, 55.0);
-//    [button1 addTarget:self action:@selector(buttonPopin:)forControlEvents:UIControlEventTouchUpInside];
-//    button1.tag = 199;
-//    [self.imageView addSubview: button1];
+    //    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    //    [button1 setBackgroundImage:[UIImage imageNamed:@"pinC"] forState:UIControlStateNormal];
+    //    button1.frame = CGRectMake(422.0, 368.0, 30.0, 55.0);
+    //    [button1 addTarget:self action:@selector(buttonPopin:)forControlEvents:UIControlEventTouchUpInside];
+    //    button1.tag = 199;
+    //    [self.imageView addSubview: button1];
     
     //Pin #3 Flower Garden (Flower)
     UIButton *button2 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -351,9 +347,9 @@ UIView *_contentView;
     button17.tag = 19;
     [self.imageView addSubview: button17];
     
-  
     
-  
+    
+    
     
     self.imageView.userInteractionEnabled = YES;
     
@@ -372,59 +368,9 @@ UIView *_contentView;
     twoFingerTapRecognizer.numberOfTapsRequired = 1;
     twoFingerTapRecognizer.numberOfTouchesRequired = 2;
     [self.scrollView addGestureRecognizer:twoFingerTapRecognizer];
-	
+    
+    
 }
-
-//Google Maps
-- (void)loadView {
-    // Create a GMSCameraPosition that tells the map to display the
-    // coordinate -33.86,151.20 at zoom level 6.
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:42.300999
-                                                            longitude:-83.730207
-                                                                 zoom:11];
-    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView.myLocationEnabled = YES;
-    self.view = mapView;
-    
-    // Creates a marker in the center of the map.
-//    GMSMarker *marker = [[GMSMarker alloc] init];
-//    marker.position = CLLocationCoordinate2DMake(42.301035, -83.729661);
-//    marker.title = @"Sydney";
-//    marker.snippet = @"Australia";
-//    marker.map = mapView;
-    
-    
-    UIImage *house = [UIImage imageNamed:@"pin2"];
-    house = [house imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-    _natureView = [[UIImageView alloc] initWithImage:house];
-    //_natureView.tintColor = [UIColor redColor];
-    
-    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(42.30118, -83.72976);
-    _natureHouse = [GMSMarker markerWithPosition:position];
-    _natureHouse.icon = [GMSMarker markerImageWithColor:[UIColor blackColor]];
-    _natureHouse.title = @"Nature House";
-    _natureHouse.snippet = @"Built on the footprint of Dr. Leslie’s laboratory in 2000, the DTE Energy Nature House displays the sustainable use of resources through energy and material conserving features. ";
-    _natureHouse.iconView = _natureView;
-    _natureHouse.tracksViewChanges = YES;
-    _natureHouse.icon = [UIImage imageNamed:@"pinN"];
-    NSLog(@"natureHouse: %@", _natureHouse);
-    _natureHouse.map = mapView;
-    
-    _contentView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pin2"]];
-    
-    
-    mapView.delegate = self;
-    self.view = mapView;
-}
-
-
-//Google Maps
-//- (UIView *)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
-//    if (marker == _natureHouse) {
-//        return _contentView;
-//    }
-//    return nil;
-//}
 
 -(void)viewDidAppear:(BOOL)animated{
     
@@ -448,14 +394,14 @@ UIView *_contentView;
     // 6
     [self centerScrollViewContents];
     
-
+    
 }
 
 
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-	[_captureSession stopRunning];
+    [_captureSession stopRunning];
 }
 
 - (void)didReceiveMemoryWarning
@@ -478,43 +424,43 @@ UIView *_contentView;
     
     //BOOL downloaded = [[NSUserDefaults standardUserDefaults] boolForKey: @"downloaded"];
     //if (!downloaded) {
-        //download code here
-        
-        //Create Stock Panel with header
-        //UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
-        MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel1"];
-        
-        //Create Stock Panel With Image
-        MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel2"];
-        
-        //Create Panel From Nib
-        MYIntroductionPanel *panel3 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel3"];
-        
-        //Create custom panel with events
-        MYCustomPanel *panel4 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel4"];
+    //download code here
     
-        //Create custom panel with events
-        MYCustomPanel *panel5 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel5"];
+    //Create Stock Panel with header
+    //UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
+    MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel1"];
     
-        //Add panels to an array
-        NSArray *panels = @[panel1, panel2, panel3, panel4, panel5];
-        
-        //Create the introduction view and set its delegate
-        MYBlurIntroductionView *introductionView = [[MYBlurIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-        introductionView.delegate = self;
-        introductionView.BackgroundImageView.image = [UIImage imageNamed:@"grid.png"];
-        [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
-        //introductionView.LanguageDirection = MYLanguageDirectionRightToLeft;
-        
-        //Build the introduction with desired panels
-        [introductionView buildIntroductionWithPanels:panels];
-        
-        //Add the introduction to your view
-        [self.view addSubview:introductionView];
+    //Create Stock Panel With Image
+    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel2"];
     
-        self.navigationController.navigationBar.hidden = NO;
+    //Create Panel From Nib
+    MYIntroductionPanel *panel3 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel3"];
     
-         self.title = @"Leslie Science & Nature Center";
+    //Create custom panel with events
+    MYCustomPanel *panel4 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel4"];
+    
+    //Create custom panel with events
+    MYCustomPanel *panel5 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel5"];
+    
+    //Add panels to an array
+    NSArray *panels = @[panel1, panel2, panel3, panel4, panel5];
+    
+    //Create the introduction view and set its delegate
+    MYBlurIntroductionView *introductionView = [[MYBlurIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    introductionView.delegate = self;
+    introductionView.BackgroundImageView.image = [UIImage imageNamed:@"grid.png"];
+    [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
+    //introductionView.LanguageDirection = MYLanguageDirectionRightToLeft;
+    
+    //Build the introduction with desired panels
+    [introductionView buildIntroductionWithPanels:panels];
+    
+    //Add the introduction to your view
+    [self.view addSubview:introductionView];
+    
+    self.navigationController.navigationBar.hidden = NO;
+    
+    self.title = @"Leslie Science & Nature Center";
     
     //[[NSUserDefaults standardUserDefaults] setBool:YES forKey: @"downloaded"];
     //}
@@ -527,53 +473,53 @@ UIView *_contentView;
     
     /* When the introduction finishes up, the map will load. This is to prevent it from loading too many times and breaking,*/
     
-     self.title = @"Leslie Science & Nature Center";
+    self.title = @"Leslie Science & Nature Center";
     
     NSURL *htmlFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mapView" ofType:@"html"] isDirectory:NO];
     [wv loadRequest:[NSURLRequest requestWithURL:htmlFile]];
-
+    
     /* Commenting out native mapbox */
     
     /*
-    // this auto-enables annotations based on simplestyle data for this map (see http://mapbox.com/developers/simplestyle/ for more info)
-    //
-    self.mapView.tileSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID enablingDataOnMapView:self.mapView];
-    
-    self.mapView.zoom = 8;
-    
-    [self.mapView setConstraintsSouthWest:[self.mapView.tileSource latitudeLongitudeBoundingBox].southWest
-                                northEast:[self.mapView.tileSource latitudeLongitudeBoundingBox].northEast];
-    
-    self.mapView.showsUserLocation = YES;
-    
-    if ([UIView instancesRespondToSelector:@selector(setTintColor:)])
-        self.mapView.tintColor = self.navigationController.navigationBar.tintColor;
-    
-    // zoom in to markers after launch
-    //
-    __weak RMMapView *weakMap = self.mapView; // avoid block-based memory leak
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^(void)
-                   {
-                       float degreeRadius = 500.f / 110000.f; // (9000m / 110km per degree latitude)
-                       
-                       CLLocationCoordinate2D centerCoordinate = [((RMMapboxSource *)self.mapView.tileSource) centerCoordinate];
-                       
-                       RMSphericalTrapezium zoomBounds = {
-                           .southWest = {
-                               .latitude  = centerCoordinate.latitude  - degreeRadius,
-                               .longitude = centerCoordinate.longitude - degreeRadius
-                           },
-                           .northEast = {
-                               .latitude  = centerCoordinate.latitude  + degreeRadius,
-                               .longitude = centerCoordinate.longitude + degreeRadius
-                           }
-                       };
-                       
-                       [weakMap zoomWithLatitudeLongitudeBoundsSouthWest:zoomBounds.southWest
-                                                               northEast:zoomBounds.northEast
-                                                                animated:YES];
-                   });
+     // this auto-enables annotations based on simplestyle data for this map (see http://mapbox.com/developers/simplestyle/ for more info)
+     //
+     self.mapView.tileSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID enablingDataOnMapView:self.mapView];
+     
+     self.mapView.zoom = 8;
+     
+     [self.mapView setConstraintsSouthWest:[self.mapView.tileSource latitudeLongitudeBoundingBox].southWest
+     northEast:[self.mapView.tileSource latitudeLongitudeBoundingBox].northEast];
+     
+     self.mapView.showsUserLocation = YES;
+     
+     if ([UIView instancesRespondToSelector:@selector(setTintColor:)])
+     self.mapView.tintColor = self.navigationController.navigationBar.tintColor;
+     
+     // zoom in to markers after launch
+     //
+     __weak RMMapView *weakMap = self.mapView; // avoid block-based memory leak
+     
+     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^(void)
+     {
+     float degreeRadius = 500.f / 110000.f; // (9000m / 110km per degree latitude)
+     
+     CLLocationCoordinate2D centerCoordinate = [((RMMapboxSource *)self.mapView.tileSource) centerCoordinate];
+     
+     RMSphericalTrapezium zoomBounds = {
+     .southWest = {
+     .latitude  = centerCoordinate.latitude  - degreeRadius,
+     .longitude = centerCoordinate.longitude - degreeRadius
+     },
+     .northEast = {
+     .latitude  = centerCoordinate.latitude  + degreeRadius,
+     .longitude = centerCoordinate.longitude + degreeRadius
+     }
+     };
+     
+     [weakMap zoomWithLatitudeLongitudeBoundsSouthWest:zoomBounds.southWest
+     northEast:zoomBounds.northEast
+     animated:YES];
+     });
      
      */
     
@@ -711,8 +657,8 @@ UIView *_contentView;
         }];
         
     }
-
-
+    
+    
     
     if (tid == 2) {
         // deal with downButton event here ..
@@ -729,7 +675,7 @@ UIView *_contentView;
         }];
         
     }
-
+    
     
     
     if (tid == 3) {
@@ -985,7 +931,7 @@ UIView *_contentView;
 -(void)popinMethod:(id)qrCode {
     //BKTPopinControllerViewController *popin = [[BKTPopinControllerViewController alloc] init];
     
-   // BKTPopinControllerViewController2 *popin1 = [[BKTPopinControllerViewController2 alloc] init];
+    // BKTPopinControllerViewController2 *popin1 = [[BKTPopinControllerViewController2 alloc] init];
     
     if ([qrCode isEqual: @"1"]) {
         
@@ -1001,8 +947,8 @@ UIView *_contentView;
         [self presentPopinController:popin1 animated:YES completion:^{
             NSLog(@"Popin presented !");
         }];
-
-
+        
+        
     };
     
     if ([qrCode isEqual: @"2"]) {
@@ -1019,7 +965,7 @@ UIView *_contentView;
         [self presentPopinController:popin1 animated:YES completion:^{
             NSLog(@"Popin presented !");
         }];
-    
+        
         
     };
     
@@ -1230,7 +1176,7 @@ UIView *_contentView;
 }
 
 -(void)handleMetadata:(id)metadata {
-	NSString *qrCode = [metadata stringValue];
+    NSString *qrCode = [metadata stringValue];
     
     
     //[self popinMethod];
@@ -1241,7 +1187,7 @@ UIView *_contentView;
     [_captureSession startRunning];
     
     
-	NSLog(@"%@", qrCode);
+    NSLog(@"%@", qrCode);
 }
 
 
@@ -1255,11 +1201,11 @@ UIView *_contentView;
         // Get the metadata object.
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
         if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {
-			
+            
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-			[self performSelectorOnMainThread:@selector(handleMetadata:) withObject:metadataObj waitUntilDone:NO];
-			
-                    }
+            [self performSelectorOnMainThread:@selector(handleMetadata:) withObject:metadataObj waitUntilDone:NO];
+            
+        }
     }
 }
 

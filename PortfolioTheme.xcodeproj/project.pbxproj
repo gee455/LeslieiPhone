@@ -497,6 +497,11 @@
 		9B506CFF1D7923ED00439243 /* trailMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B506CFD1D7923ED00439243 /* trailMap.png */; };
 		9B506D001D7923ED00439243 /* trailMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B506CFE1D7923ED00439243 /* trailMap@2x.png */; };
 		9B506D031D79243B00439243 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B506D021D79243B00439243 /* MapViewController.m */; };
+		9B506D0D1D79341700439243 /* BKTPopin2ControllerViewController_about1i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B506D0A1D79341700439243 /* BKTPopin2ControllerViewController_about1i.xib */; };
+		9B506D111D79343B00439243 /* BKTPopin2ControllerViewController_about1i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B506D101D79343B00439243 /* BKTPopin2ControllerViewController_about1i.m */; };
+		9B506D131D79351300439243 /* ourreach_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B506D121D79351300439243 /* ourreach_03.png */; };
+		9B506D171D79362300439243 /* BKTPopin2ControllerViewControlleri.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B506D151D79362300439243 /* BKTPopin2ControllerViewControlleri.m */; };
+		9B506D181D79362300439243 /* BKTPopin2ControllerViewControlleri.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B506D161D79362300439243 /* BKTPopin2ControllerViewControlleri.xib */; };
 		9B5218BA1BBB56DD00A1D03B /* Intro_Screen3_alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5218B91BBB56DD00A1D03B /* Intro_Screen3_alt.png */; };
 		9B5218BC1BBB576F00A1D03B /* Intro_Screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5218BB1BBB576F00A1D03B /* Intro_Screen2.png */; };
 		9B5218BF1BBB588C00A1D03B /* ourreach.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5218BD1BBB588C00A1D03B /* ourreach.png */; };
@@ -1467,6 +1472,13 @@
 		9B506CFE1D7923ED00439243 /* trailMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trailMap@2x.png"; sourceTree = "<group>"; };
 		9B506D011D79243B00439243 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = MaryPopin/MapViewController.h; sourceTree = "<group>"; };
 		9B506D021D79243B00439243 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = MaryPopin/MapViewController.m; sourceTree = "<group>"; };
+		9B506D0A1D79341700439243 /* BKTPopin2ControllerViewController_about1i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKTPopin2ControllerViewController_about1i.xib; path = "Popin Content/BKTPopin2ControllerViewController_about1i.xib"; sourceTree = "<group>"; };
+		9B506D0F1D79343B00439243 /* BKTPopin2ControllerViewController_about1i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTPopin2ControllerViewController_about1i.h; path = "Popin Content/BKTPopin2ControllerViewController_about1i.h"; sourceTree = "<group>"; };
+		9B506D101D79343B00439243 /* BKTPopin2ControllerViewController_about1i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTPopin2ControllerViewController_about1i.m; path = "Popin Content/BKTPopin2ControllerViewController_about1i.m"; sourceTree = "<group>"; };
+		9B506D121D79351300439243 /* ourreach_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ourreach_03.png; sourceTree = "<group>"; };
+		9B506D141D79362300439243 /* BKTPopin2ControllerViewControlleri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTPopin2ControllerViewControlleri.h; path = "Popin Content/BKTPopin2ControllerViewControlleri.h"; sourceTree = "<group>"; };
+		9B506D151D79362300439243 /* BKTPopin2ControllerViewControlleri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTPopin2ControllerViewControlleri.m; path = "Popin Content/BKTPopin2ControllerViewControlleri.m"; sourceTree = "<group>"; };
+		9B506D161D79362300439243 /* BKTPopin2ControllerViewControlleri.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BKTPopin2ControllerViewControlleri.xib; path = "Popin Content/BKTPopin2ControllerViewControlleri.xib"; sourceTree = "<group>"; };
 		9B5218B91BBB56DD00A1D03B /* Intro_Screen3_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro_Screen3_alt.png; sourceTree = "<group>"; };
 		9B5218BB1BBB576F00A1D03B /* Intro_Screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro_Screen2.png; sourceTree = "<group>"; };
 		9B5218BD1BBB588C00A1D03B /* ourreach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ourreach.png; sourceTree = "<group>"; };
@@ -2918,6 +2930,27 @@
 			name = "Bird Matching Game";
 			sourceTree = "<group>";
 		};
+		9B506D091D7933A800439243 /* iPhone Version */ = {
+			isa = PBXGroup;
+			children = (
+				9B506D121D79351300439243 /* ourreach_03.png */,
+				9B506D0F1D79343B00439243 /* BKTPopin2ControllerViewController_about1i.h */,
+				9B506D101D79343B00439243 /* BKTPopin2ControllerViewController_about1i.m */,
+				9B506D0A1D79341700439243 /* BKTPopin2ControllerViewController_about1i.xib */,
+			);
+			name = "iPhone Version";
+			sourceTree = "<group>";
+		};
+		9B506D191D79362B00439243 /* iPhone Version */ = {
+			isa = PBXGroup;
+			children = (
+				9B506D141D79362300439243 /* BKTPopin2ControllerViewControlleri.h */,
+				9B506D151D79362300439243 /* BKTPopin2ControllerViewControlleri.m */,
+				9B506D161D79362300439243 /* BKTPopin2ControllerViewControlleri.xib */,
+			);
+			name = "iPhone Version";
+			sourceTree = "<group>";
+		};
 		9B8246AD1D581A94005FC41D /* iPhone Versions */ = {
 			isa = PBXGroup;
 			children = (
@@ -3376,6 +3409,7 @@
 		9BFF746D1A56339100DAAF02 /* History Video Popin */ = {
 			isa = PBXGroup;
 			children = (
+				9B506D191D79362B00439243 /* iPhone Version */,
 				9BFF748B1A57691F00DAAF02 /* BKTPopin2ControllerViewController.h */,
 				9BFF748C1A57691F00DAAF02 /* BKTPopin2ControllerViewController.m */,
 				9BFF748D1A57691F00DAAF02 /* BKTPopin2ControllerViewController.xib */,
@@ -3403,6 +3437,7 @@
 		9BFF747C1A575B2900DAAF02 /* About Middle */ = {
 			isa = PBXGroup;
 			children = (
+				9B506D091D7933A800439243 /* iPhone Version */,
 				9BFF74861A57691000DAAF02 /* BKTPopin2ControllerViewController_about1.h */,
 				9BFF74871A57691000DAAF02 /* BKTPopin2ControllerViewController_about1.m */,
 				9BFF74881A57691000DAAF02 /* BKTPopin2ControllerViewController_about1.xib */,
@@ -3608,6 +3643,7 @@
 				9B44601A1C8FBCE700085567 /* BKTPopinControllerViewController9.xib in Resources */,
 				9B4461201C910DB900085567 /* pin2@2x.png in Resources */,
 				9B5218D71BBB5D7F00A1D03B /* QRanswer1.png in Resources */,
+				9B506D131D79351300439243 /* ourreach_03.png in Resources */,
 				9B44601F1C8FBCE700085567 /* BKTPopinControllerViewController14.xib in Resources */,
 				13CFF3E619E3B9A80087CE0F /* 1b.jpg in Resources */,
 				13CD8EFB19C1C44C003AC197 /* test1.png in Resources */,
@@ -3945,6 +3981,7 @@
 				9B4461B71C96169100085567 /* TreeRoot.png in Resources */,
 				9B4461911C9612DD00085567 /* Millipede@3x.png in Resources */,
 				9B4460721C90F57500085567 /* BKTPopin2ControllerViewController_map4.xib in Resources */,
+				9B506D181D79362300439243 /* BKTPopin2ControllerViewControlleri.xib in Resources */,
 				9B8246FC1D5C0DCF005FC41D /* post10_01.png in Resources */,
 				9B4BCBA61A59FC0900B61094 /* Google+.png in Resources */,
 				9B57AFDF1A683A82006B281D /* redhawk.wav in Resources */,
@@ -4086,6 +4123,7 @@
 				9B445FF11C8FBB6F00085567 /* post6.png in Resources */,
 				9B44614D1C95F37C00085567 /* Caterpillar@2x.png in Resources */,
 				9B8246D81D5C0563005FC41D /* post7_08.png in Resources */,
+				9B506D0D1D79341700439243 /* BKTPopin2ControllerViewController_about1i.xib in Resources */,
 				9B5218C81BBB59AF00A1D03B /* featuresNew@2x.png in Resources */,
 				9B44618E1C9612DD00085567 /* moss.png in Resources */,
 				9B4460671C90F45300085567 /* critter.png in Resources */,
@@ -4229,6 +4267,7 @@
 				13BB385619C71C27004F5BF3 /* DDProgressView.m in Sources */,
 				13B3DFDE19FF7A8C0005557F /* FeedItem.m in Sources */,
 				9B8248051D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */,
+				9B506D171D79362300439243 /* BKTPopin2ControllerViewControlleri.m in Sources */,
 				0C1726011A0E77FA00D55FF6 /* SCLAlertViewResponder.m in Sources */,
 				0C1726041A0E77FA00D55FF6 /* UIImage+ImageEffects.m in Sources */,
 				134BAB0619ED104B0063976B /* PhotoViewController.m in Sources */,
@@ -4358,6 +4397,7 @@
 				9BA8E5E11A6877190015152B /* BKTPopin2ControllerViewController_feature4.m in Sources */,
 				9B44606C1C90F53600085567 /* BKTPopin2ControllerViewController_map3.m in Sources */,
 				9B4BCB5B1A58C09300B61094 /* UIColor+MBWPExtensions.m in Sources */,
+				9B506D111D79343B00439243 /* BKTPopin2ControllerViewController_about1i.m in Sources */,
 				134B269A19C821BA0056D4F1 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				9B8246F61D5C0B8F005FC41D /* BKTPopinControllerViewController9i.m in Sources */,
 				131AF77C19B58BFC00379D26 /* CollectionViewController.m in Sources */,

@@ -72,9 +72,6 @@
 #define kRegularGeographyClassMapID @"examples.map-zmy97flj"
 #define kRetinaGeographyClassMapID  @"examples.1fjyxmhi"
 
-//iPad vs iPhone Detect
-#define IDIOM    UI_USER_INTERFACE_IDIOM()
-#define IPAD     UIUserInterfaceIdiomPad
 
 @interface MainViewController ()
 
@@ -929,243 +926,492 @@
 
 
 -(void)popinMethod:(id)qrCode {
-    //BKTPopinControllerViewController *popin = [[BKTPopinControllerViewController alloc] init];
-    
-    // BKTPopinControllerViewController2 *popin1 = [[BKTPopinControllerViewController2 alloc] init];
-    
-    if ([qrCode isEqual: @"1"]) {
-        
-        //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
-        BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"2"]) {
-        
-        
-        BKTPopinControllerViewController13i  *popin1 = [[BKTPopinControllerViewController13i  alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
     
     
-    if ([qrCode isEqual: @"3"]) {
-        
-        
-        BKTPopinControllerViewController5 *popin1 = [[BKTPopinControllerViewController5 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
     
-    if ([qrCode isEqual: @"4"]) {
-        
-        
-        BKTPopinControllerViewController6 *popin1 = [[BKTPopinControllerViewController6 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
+    #define IDIOM    UI_USER_INTERFACE_IDIOM()
+    #define IPAD     UIUserInterfaceIdiomPad
     
-    if ([qrCode isEqual: @"5"]) {
+    if ( IDIOM == IPAD ) {
+        /* do something specifically for iPad. */
         
         
-        BKTPopinControllerViewController7 *popin1 = [[BKTPopinControllerViewController7 alloc] init];
+        if ([qrCode isEqual: @"1"]) {
+            
+            //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
+            BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
         
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    if ([qrCode isEqual: @"6"]) {
-        
-        
-        BKTPopinControllerViewController8 *popin1 = [[BKTPopinControllerViewController8 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
+        if ([qrCode isEqual: @"2"]) {
+            
+            
+            BKTPopinControllerViewController13i  *popin1 = [[BKTPopinControllerViewController13i  alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
         
         
-    };
+        if ([qrCode isEqual: @"3"]) {
+            
+            
+            BKTPopinControllerViewController5 *popin1 = [[BKTPopinControllerViewController5 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"4"]) {
+            
+            
+            BKTPopinControllerViewController6 *popin1 = [[BKTPopinControllerViewController6 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"5"]) {
+            
+            
+            BKTPopinControllerViewController7 *popin1 = [[BKTPopinControllerViewController7 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        if ([qrCode isEqual: @"6"]) {
+            
+            
+            BKTPopinControllerViewController8 *popin1 = [[BKTPopinControllerViewController8 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"7"]) {
+            
+            
+            BKTPopinControllerViewController9 *popin1 = [[BKTPopinControllerViewController9 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"8"]) {
+            
+            
+            BKTPopinControllerViewController10 *popin1 = [[BKTPopinControllerViewController10 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"9"]) {
+            
+            
+            BKTPopinControllerViewController11 *popin1 = [[BKTPopinControllerViewController11 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"10"]) {
+            
+            
+            BKTPopinControllerViewController12 *popin1 = [[BKTPopinControllerViewController12 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"11"]) {
+            
+            
+            BKTPopinControllerViewController13 *popin1 = [[BKTPopinControllerViewController13 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"12"]) {
+            
+            
+            BKTPopinControllerViewController14 *popin1 = [[BKTPopinControllerViewController14 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"13"]) {
+            
+            
+            BKTPopinControllerViewController15 *popin1 = [[BKTPopinControllerViewController15 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+
+        
+        
+    } else {
+        /* do something specifically for iPhone or iPod touch. */
+        
+        
+        if ([qrCode isEqual: @"1"]) {
+            
+            //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
+            BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"2"]) {
+            
+            
+            BKTPopinControllerViewController13i  *popin1 = [[BKTPopinControllerViewController13i  alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        
+        if ([qrCode isEqual: @"3"]) {
+            
+            
+            BKTPopinControllerViewController5 *popin1 = [[BKTPopinControllerViewController5 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"4"]) {
+            
+            
+            BKTPopinControllerViewController6 *popin1 = [[BKTPopinControllerViewController6 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"5"]) {
+            
+            
+            BKTPopinControllerViewController7 *popin1 = [[BKTPopinControllerViewController7 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        if ([qrCode isEqual: @"6"]) {
+            
+            
+            BKTPopinControllerViewController8 *popin1 = [[BKTPopinControllerViewController8 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"7"]) {
+            
+            
+            BKTPopinControllerViewController9 *popin1 = [[BKTPopinControllerViewController9 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"8"]) {
+            
+            
+            BKTPopinControllerViewController10 *popin1 = [[BKTPopinControllerViewController10 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"9"]) {
+            
+            
+            BKTPopinControllerViewController11 *popin1 = [[BKTPopinControllerViewController11 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"10"]) {
+            
+            
+            BKTPopinControllerViewController12 *popin1 = [[BKTPopinControllerViewController12 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"11"]) {
+            
+            
+            BKTPopinControllerViewController13 *popin1 = [[BKTPopinControllerViewController13 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"12"]) {
+            
+            
+            BKTPopinControllerViewController14 *popin1 = [[BKTPopinControllerViewController14 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"13"]) {
+            
+            
+            BKTPopinControllerViewController15 *popin1 = [[BKTPopinControllerViewController15 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+
+    }
     
-    if ([qrCode isEqual: @"7"]) {
-        
-        
-        BKTPopinControllerViewController9 *popin1 = [[BKTPopinControllerViewController9 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"8"]) {
-        
-        
-        BKTPopinControllerViewController10 *popin1 = [[BKTPopinControllerViewController10 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"9"]) {
-        
-        
-        BKTPopinControllerViewController11 *popin1 = [[BKTPopinControllerViewController11 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"10"]) {
-        
-        
-        BKTPopinControllerViewController12 *popin1 = [[BKTPopinControllerViewController12 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"11"]) {
-        
-        
-        BKTPopinControllerViewController13 *popin1 = [[BKTPopinControllerViewController13 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"12"]) {
-        
-        
-        BKTPopinControllerViewController14 *popin1 = [[BKTPopinControllerViewController14 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"13"]) {
-        
-        
-        BKTPopinControllerViewController15 *popin1 = [[BKTPopinControllerViewController15 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
     
 }
 

@@ -13,8 +13,8 @@
 #import "UIColor+MBWPExtensions.h"
 //Popin
 #import "BKTPopin2ControllerViewController_about2i.h"
-#import "BKTPopin2ControllerViewController_about1.h"
-#import "BKTPopin2ControllerViewController.h"
+#import "BKTPopin2ControllerViewController_about1i.h"
+#import "BKTPopin2ControllerViewControlleri.h"
 #import "UIViewController+MaryPopin.h"
 
 @interface AboutViewControlleriPhone ()
@@ -216,7 +216,7 @@
 
 - (IBAction)presentPopinPressed:(id)sender
 {
-    BKTPopin2ControllerViewController *popin = [[BKTPopin2ControllerViewController alloc] init];
+    BKTPopin2ControllerViewControlleri *popin = [[BKTPopin2ControllerViewControlleri alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     
@@ -229,7 +229,7 @@
 
 - (IBAction)presentPopinPressed1:(id)sender
 {
-    BKTPopin2ControllerViewController_about1 *popin = [[BKTPopin2ControllerViewController_about1 alloc] init];
+    BKTPopin2ControllerViewController_about1i *popin = [[BKTPopin2ControllerViewController_about1i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     

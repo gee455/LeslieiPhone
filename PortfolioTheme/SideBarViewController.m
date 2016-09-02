@@ -132,6 +132,7 @@
     
     UIViewController *newFrontController = nil;
     
+    
     if (row == 0)
     {
         UIStoryboard *storyboard = self.storyboard;
@@ -140,7 +141,7 @@
     else if(row == 1)
     {
         UIStoryboard *storyboard = self.storyboard;
-        newFrontController = [storyboard instantiateViewControllerWithIdentifier:@"about2"];
+        newFrontController = [storyboard instantiateViewControllerWithIdentifier:@"about"];
     }
     else if(row == 2)
     {

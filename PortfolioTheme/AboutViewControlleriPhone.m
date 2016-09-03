@@ -133,6 +133,15 @@
     
 }
 
+/**
+ *  @brief set lef bar button with custom title
+ */
+- (void)addBackButtonWithTitle:(NSString *)title {
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(backButtonPressed:)];
+    self.navigationItem.leftBarButtonItem = backButton;
+}
+
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     

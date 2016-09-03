@@ -34,8 +34,23 @@
 #import "BKTPopinControllerViewController2i.h"
 #import "BKTPopinControllerViewController3i.h"
 #import "BKTPopinControllerViewController4i.h"
+#import "BKTPopinControllerViewController5i.h"
+#import "BKTPopinControllerViewController6i.h"
+#import "BKTPopinControllerViewController7i.h"
+#import "BKTPopinControllerViewController8i.h"
+#import "BKTPopinControllerViewController9i.h"
+#import "BKTPopinControllerViewController10i.h"
+#import "BKTPopinControllerViewController11i.h"
+#import "BKTPopinControllerViewController12i.h"
 #import "BKTPopinControllerViewController13i.h"
 #import "BKTPopinControllerViewController14i.h"
+#import "BKTPopinControllerViewController15i.h"
+
+//iPhone Sensing Nature Trail
+#import "BKTPopinControllerViewControllerSensing1i.h"
+#import "BKTPopinControllerViewControllerSensing2i.h"
+#import "BKTPopinControllerViewControllerSensing3i.h"
+#import "BKTPopinControllerViewControllerSensing4i.h"
 
 //Map Popin
 #import "BKTPopin2ControllerViewController_map1.h"
@@ -939,7 +954,7 @@
         if ([qrCode isEqual: @"1"]) {
             
             //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
-            BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
+            BKTPopinControllerViewController3 *popin1 = [[BKTPopinControllerViewController3 alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -957,7 +972,7 @@
         if ([qrCode isEqual: @"2"]) {
             
             
-            BKTPopinControllerViewController13i  *popin1 = [[BKTPopinControllerViewController13i  alloc] init];
+            BKTPopinControllerViewController4  *popin1 = [[BKTPopinControllerViewController4  alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1179,7 +1194,7 @@
         if ([qrCode isEqual: @"1"]) {
             
             //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
-            BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
+            BKTPopinControllerViewController3i *popin1 = [[BKTPopinControllerViewController3i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1197,7 +1212,7 @@
         if ([qrCode isEqual: @"2"]) {
             
             
-            BKTPopinControllerViewController13i  *popin1 = [[BKTPopinControllerViewController13i  alloc] init];
+            BKTPopinControllerViewController4i  *popin1 = [[BKTPopinControllerViewController4i  alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1216,7 +1231,7 @@
         if ([qrCode isEqual: @"3"]) {
             
             
-            BKTPopinControllerViewController5 *popin1 = [[BKTPopinControllerViewController5 alloc] init];
+            BKTPopinControllerViewController5i *popin1 = [[BKTPopinControllerViewController5i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1234,7 +1249,7 @@
         if ([qrCode isEqual: @"4"]) {
             
             
-            BKTPopinControllerViewController6 *popin1 = [[BKTPopinControllerViewController6 alloc] init];
+            BKTPopinControllerViewController6i *popin1 = [[BKTPopinControllerViewController6i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1252,7 +1267,7 @@
         if ([qrCode isEqual: @"5"]) {
             
             
-            BKTPopinControllerViewController7 *popin1 = [[BKTPopinControllerViewController7 alloc] init];
+            BKTPopinControllerViewController7i *popin1 = [[BKTPopinControllerViewController7i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1269,7 +1284,7 @@
         if ([qrCode isEqual: @"6"]) {
             
             
-            BKTPopinControllerViewController8 *popin1 = [[BKTPopinControllerViewController8 alloc] init];
+            BKTPopinControllerViewController8i *popin1 = [[BKTPopinControllerViewController8i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1287,7 +1302,7 @@
         if ([qrCode isEqual: @"7"]) {
             
             
-            BKTPopinControllerViewController9 *popin1 = [[BKTPopinControllerViewController9 alloc] init];
+            BKTPopinControllerViewController9i *popin1 = [[BKTPopinControllerViewController9i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1305,7 +1320,7 @@
         if ([qrCode isEqual: @"8"]) {
             
             
-            BKTPopinControllerViewController10 *popin1 = [[BKTPopinControllerViewController10 alloc] init];
+            BKTPopinControllerViewController11i *popin1 = [[BKTPopinControllerViewController11i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1323,7 +1338,7 @@
         if ([qrCode isEqual: @"9"]) {
             
             
-            BKTPopinControllerViewController11 *popin1 = [[BKTPopinControllerViewController11 alloc] init];
+            BKTPopinControllerViewController10i *popin1 = [[BKTPopinControllerViewController10i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1341,7 +1356,7 @@
         if ([qrCode isEqual: @"10"]) {
             
             
-            BKTPopinControllerViewController12 *popin1 = [[BKTPopinControllerViewController12 alloc] init];
+            BKTPopinControllerViewController12i *popin1 = [[BKTPopinControllerViewController12i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1359,7 +1374,7 @@
         if ([qrCode isEqual: @"11"]) {
             
             
-            BKTPopinControllerViewController13 *popin1 = [[BKTPopinControllerViewController13 alloc] init];
+            BKTPopinControllerViewController13i *popin1 = [[BKTPopinControllerViewController13i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1377,7 +1392,7 @@
         if ([qrCode isEqual: @"12"]) {
             
             
-            BKTPopinControllerViewController14 *popin1 = [[BKTPopinControllerViewController14 alloc] init];
+            BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
@@ -1395,7 +1410,7 @@
         if ([qrCode isEqual: @"13"]) {
             
             
-            BKTPopinControllerViewController15 *popin1 = [[BKTPopinControllerViewController15 alloc] init];
+            BKTPopinControllerViewController15i *popin1 = [[BKTPopinControllerViewController15i alloc] init];
             
             //Disable auto dismiss and removed semi-transparent background
             [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];

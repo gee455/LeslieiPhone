@@ -131,8 +131,8 @@
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithHexString:kTintColorHex];
     
-    self.navigationItem.rightBarButtonItem = [[RMUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
-    self.navigationItem.rightBarButtonItem.tintColor = self.navigationController.navigationBar.tintColor;
+//    self.navigationItem.rightBarButtonItem = [[RMUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+//    self.navigationItem.rightBarButtonItem.tintColor = self.navigationController.navigationBar.tintColor;
     
     //self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:nil action:nil];
     

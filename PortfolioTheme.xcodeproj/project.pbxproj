@@ -580,6 +580,16 @@
 		9B62C8B01D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8AE1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib */; };
 		9B62C8B41D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8B21D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m */; };
 		9B62C8B51D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8B31D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib */; };
+		9B62C8B91D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8B71D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.m */; };
+		9B62C8BA1D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8B81D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.xib */; };
+		9B62C8BC1D7BA205004D5DDA /* QRanswer2_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8BB1D7BA205004D5DDA /* QRanswer2_03.png */; };
+		9B62C8C01D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8BE1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.m */; };
+		9B62C8C11D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8BF1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.xib */; };
+		9B62C8C31D7BA2E7004D5DDA /* QRanswer3_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8C21D7BA2E7004D5DDA /* QRanswer3_03.png */; };
+		9B62C8C51D7BA3C3004D5DDA /* QRanswer4_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8C41D7BA3C3004D5DDA /* QRanswer4_03.png */; };
+		9B62C8C91D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8C71D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.m */; };
+		9B62C8CA1D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8C81D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.xib */; };
+		9B62C8CD1D7BAA19004D5DDA /* HuntViewController1i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8CC1D7BAA19004D5DDA /* HuntViewController1i.m */; };
 		9B8246AB1D5818DE005FC41D /* BKTPopinControllerViewController2i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8246A91D5818DE005FC41D /* BKTPopinControllerViewController2i.m */; };
 		9B8246AC1D5818DE005FC41D /* BKTPopinControllerViewController2i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8246AA1D5818DE005FC41D /* BKTPopinControllerViewController2i.xib */; };
 		9B8246B11D582090005FC41D /* BKTPopinControllerViewController3i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8246AF1D582090005FC41D /* BKTPopinControllerViewController3i.m */; };
@@ -731,8 +741,6 @@
 		9B8247FE1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8247FC1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m */; };
 		9B8247FF1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8247FD1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib */; };
 		9B8248011D6412E9005FC41D /* QRpara_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248001D6412E9005FC41D /* QRpara_03.png */; };
-		9B8248051D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8248031D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m */; };
-		9B8248061D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248041D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib */; };
 		9B82480A1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */; };
 		9B82480B1D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */; };
 		9B82480D1D64141E005FC41D /* QRanswer1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B82480C1D64141E005FC41D /* QRanswer1_03.png */; };
@@ -1587,6 +1595,20 @@
 		9B62C8B11D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing4.h; sourceTree = "<group>"; };
 		9B62C8B21D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing4.m; sourceTree = "<group>"; };
 		9B62C8B31D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing4.xib; sourceTree = "<group>"; };
+		9B62C8B61D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR2i_answer.h; sourceTree = "<group>"; };
+		9B62C8B71D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR2i_answer.m; sourceTree = "<group>"; };
+		9B62C8B81D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR2i_answer.xib; sourceTree = "<group>"; };
+		9B62C8BB1D7BA205004D5DDA /* QRanswer2_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRanswer2_03.png; sourceTree = "<group>"; };
+		9B62C8BD1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR3i_answer.h; sourceTree = "<group>"; };
+		9B62C8BE1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR3i_answer.m; sourceTree = "<group>"; };
+		9B62C8BF1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR3i_answer.xib; sourceTree = "<group>"; };
+		9B62C8C21D7BA2E7004D5DDA /* QRanswer3_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRanswer3_03.png; sourceTree = "<group>"; };
+		9B62C8C41D7BA3C3004D5DDA /* QRanswer4_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRanswer4_03.png; sourceTree = "<group>"; };
+		9B62C8C61D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR4i_answer.h; sourceTree = "<group>"; };
+		9B62C8C71D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR4i_answer.m; sourceTree = "<group>"; };
+		9B62C8C81D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR4i_answer.xib; sourceTree = "<group>"; };
+		9B62C8CB1D7BAA19004D5DDA /* HuntViewController1i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuntViewController1i.h; sourceTree = "<group>"; };
+		9B62C8CC1D7BAA19004D5DDA /* HuntViewController1i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HuntViewController1i.m; sourceTree = "<group>"; };
 		9B8246A81D5818DE005FC41D /* BKTPopinControllerViewController2i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewController2i.h; sourceTree = "<group>"; };
 		9B8246A91D5818DE005FC41D /* BKTPopinControllerViewController2i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewController2i.m; sourceTree = "<group>"; };
 		9B8246AA1D5818DE005FC41D /* BKTPopinControllerViewController2i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewController2i.xib; sourceTree = "<group>"; };
@@ -1770,9 +1792,6 @@
 		9B8247FC1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR4i.m; sourceTree = "<group>"; };
 		9B8247FD1D64128F005FC41D /* BKTPopin2ControllerViewController_QR4i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR4i.xib; sourceTree = "<group>"; };
 		9B8248001D6412E9005FC41D /* QRpara_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRpara_03.png; sourceTree = "<group>"; };
-		9B8248021D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR4i_answer.h; sourceTree = "<group>"; };
-		9B8248031D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR4i_answer.m; sourceTree = "<group>"; };
-		9B8248041D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR4i_answer.xib; sourceTree = "<group>"; };
 		9B8248071D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopin2ControllerViewController_QR1i_answer.h; sourceTree = "<group>"; };
 		9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopin2ControllerViewController_QR1i_answer.m; sourceTree = "<group>"; };
 		9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopin2ControllerViewController_QR1i_answer.xib; sourceTree = "<group>"; };
@@ -3095,9 +3114,15 @@
 				9B8248071D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.h */,
 				9B8248081D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.m */,
 				9B8248091D6413A0005FC41D /* BKTPopin2ControllerViewController_QR1i_answer.xib */,
-				9B8248021D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.h */,
-				9B8248031D641365005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m */,
-				9B8248041D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib */,
+				9B62C8B61D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.h */,
+				9B62C8B71D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.m */,
+				9B62C8B81D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.xib */,
+				9B62C8BD1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.h */,
+				9B62C8BE1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.m */,
+				9B62C8BF1D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.xib */,
+				9B62C8C61D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.h */,
+				9B62C8C71D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.m */,
+				9B62C8C81D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.xib */,
 				9B4728D81D7B8227004610C6 /* BKTPopinControllerViewControllerSensing1i.h */,
 				9B4728D91D7B8227004610C6 /* BKTPopinControllerViewControllerSensing1i.m */,
 				9B4728DA1D7B8227004610C6 /* BKTPopinControllerViewControllerSensing1i.xib */,
@@ -3110,6 +3135,8 @@
 				9B62C89D1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.h */,
 				9B62C89E1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.m */,
 				9B62C89F1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.xib */,
+				9B62C8CB1D7BAA19004D5DDA /* HuntViewController1i.h */,
+				9B62C8CC1D7BAA19004D5DDA /* HuntViewController1i.m */,
 			);
 			name = "iPhone Versions";
 			sourceTree = "<group>";
@@ -3204,6 +3231,9 @@
 				9B8247F91D64126D005FC41D /* QRowl_03.png */,
 				9B8248001D6412E9005FC41D /* QRpara_03.png */,
 				9B82480C1D64141E005FC41D /* QRanswer1_03.png */,
+				9B62C8BB1D7BA205004D5DDA /* QRanswer2_03.png */,
+				9B62C8C21D7BA2E7004D5DDA /* QRanswer3_03.png */,
+				9B62C8C41D7BA3C3004D5DDA /* QRanswer4_03.png */,
 			);
 			name = "Iphone Images";
 			sourceTree = "<group>";
@@ -3758,6 +3788,7 @@
 				9B4BCB6C1A596C5900B61094 /* QRowl.png in Resources */,
 				9B8247F81D641200005FC41D /* BKTPopin2ControllerViewController_QR3i.xib in Resources */,
 				9B4461181C910DB900085567 /* pinC@2x.png in Resources */,
+				9B62C8C51D7BA3C3004D5DDA /* QRanswer4_03.png in Resources */,
 				13E40F9C19E3E43300B95175 /* icon_100x100.png in Resources */,
 				9BCB60FA1A57838E00119235 /* nature4.png in Resources */,
 				9B4460C51C9103EE00085567 /* post6map@2x.png in Resources */,
@@ -3777,6 +3808,7 @@
 				134B26C019C827FC0056D4F1 /* grid.png in Resources */,
 				9B4BCB6A1A596C5900B61094 /* QRfalcon.png in Resources */,
 				9B82478F1D5CD238005FC41D /* critter1_03.png in Resources */,
+				9B62C8C11D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.xib in Resources */,
 				9B4460C01C9103EE00085567 /* post9map.png in Resources */,
 				9B8246F01D5C0A7B005FC41D /* post9_06.png in Resources */,
 				9B44618A1C9612DD00085567 /* frog.png in Resources */,
@@ -3792,6 +3824,7 @@
 				9B4461021C910DB900085567 /* pinE@2x.png in Resources */,
 				9B4460061C8FBC9300085567 /* BKTPopinControllerViewController2.xib in Resources */,
 				9B57AF5C1A65DC0A006B281D /* unlock2.png in Resources */,
+				9B62C8BA1D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.xib in Resources */,
 				9B4461931C9612DD00085567 /* Millipede@2x.png in Resources */,
 				9B62C8A61D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.xib in Resources */,
 				13E40FA719E3E43300B95175 /* icon_57x57.png in Resources */,
@@ -4007,7 +4040,9 @@
 				0CC45EC81A0DD09C00CD4618 /* MYCustomPanel.xib in Resources */,
 				9B8247461D5C22F9005FC41D /* raptorCage_06.png in Resources */,
 				9B4461B81C96169100085567 /* AnimalTracks1@2x.png in Resources */,
+				9B62C8CA1D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.xib in Resources */,
 				9B8246CC1D5A98B0005FC41D /* post1_01.png in Resources */,
+				9B62C8BC1D7BA205004D5DDA /* QRanswer2_03.png in Resources */,
 				13C3687819D98DA000CECD3D /* arrow.png in Resources */,
 				9B44614F1C95F37C00085567 /* Spider Web@2x.png in Resources */,
 				134B26C519C84F5F0056D4F1 /* about.png in Resources */,
@@ -4102,7 +4137,6 @@
 				9BA8E5E71A68B63C0015152B /* feature3.png in Resources */,
 				9B82473E1D5C20C1005FC41D /* BKTPopinControllerViewController14i.xib in Resources */,
 				9B4461BB1C96169100085567 /* AnimalNest.png in Resources */,
-				9B8248061D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.xib in Resources */,
 				13E40FAB19E3E43300B95175 /* icon_76x76.png in Resources */,
 				9B445FF21C8FBB6F00085567 /* post6@2x.png in Resources */,
 				9B5219171BBDD3DA00A1D03B /* mapView.html in Resources */,
@@ -4258,6 +4292,7 @@
 				132638E319B5984A009159B7 /* backTopBar.jpg in Resources */,
 				9B4460621C90F45300085567 /* post4@2x.png in Resources */,
 				9B8247871D5CC9F8005FC41D /* unlock2_03.png in Resources */,
+				9B62C8C31D7BA2E7004D5DDA /* QRanswer3_03.png in Resources */,
 				9B5218DB1BBB5E0E00A1D03B /* QRanswer2.png in Resources */,
 				1326396419B5BFF8009159B7 /* README.md in Resources */,
 				9BCB613F1A57962E00119235 /* BKTPopin2ControllerViewController_critter2.xib in Resources */,
@@ -4305,6 +4340,7 @@
 				0C1726031A0E77FA00D55FF6 /* SCLButton.m in Sources */,
 				9B4728E01D7B82E8004610C6 /* BKTPopinControllerViewControllerSensing2i.m in Sources */,
 				9BCB60E61A57836700119235 /* BKTPopin2ControllerViewController_nature2.m in Sources */,
+				9B62C8C91D7BA3F9004D5DDA /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */,
 				9BFF74931A57694C00DAAF02 /* BKTPopin2ControllerViewController_about2.m in Sources */,
 				9B82475A1D5C241E005FC41D /* BKTPopinControllerViewController15i.m in Sources */,
 				9B82478C1D5CD1CE005FC41D /* BKTPopinControllerViewControllerCritter1i.m in Sources */,
@@ -4340,7 +4376,6 @@
 				1326395F19B5BFF8009159B7 /* MobileBuilder.m in Sources */,
 				13BB385619C71C27004F5BF3 /* DDProgressView.m in Sources */,
 				13B3DFDE19FF7A8C0005557F /* FeedItem.m in Sources */,
-				9B8248051D641366005FC41D /* BKTPopin2ControllerViewController_QR4i_answer.m in Sources */,
 				9B506D171D79362300439243 /* BKTPopin2ControllerViewControlleri.m in Sources */,
 				0C1726011A0E77FA00D55FF6 /* SCLAlertViewResponder.m in Sources */,
 				0C1726041A0E77FA00D55FF6 /* UIImage+ImageEffects.m in Sources */,
@@ -4352,9 +4387,11 @@
 				9B4460A61C90F68100085567 /* BKTPopin2ControllerViewController_map11.m in Sources */,
 				9B8247751D5C328A005FC41D /* BKTPopin2ControllerViewController_unlock1i.m in Sources */,
 				13C3687619D98CBB00CECD3D /* OffersViewController.m in Sources */,
+				9B62C8CD1D7BAA19004D5DDA /* HuntViewController1i.m in Sources */,
 				9B82473D1D5C20C1005FC41D /* BKTPopinControllerViewController14i.m in Sources */,
 				134B269E19C821BA0056D4F1 /* UIImageView+AFNetworking.m in Sources */,
 				9BFF74991A577AC900DAAF02 /* BKTPopin2ControllerViewController_nature1.m in Sources */,
+				9B62C8B91D7BA18E004D5DDA /* BKTPopin2ControllerViewController_QR2i_answer.m in Sources */,
 				9B62C8AF1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.m in Sources */,
 				13B3DFF519FF7AB00005557F /* DetailTableViewController.m in Sources */,
 				9B8247B71D62C4EA005FC41D /* BKTPopinControllerViewControllerNature2i.m in Sources */,
@@ -4431,6 +4468,7 @@
 				9B8247031D5C12D6005FC41D /* BKTPopinControllerViewController10i.m in Sources */,
 				9B8247381D5C1EC9005FC41D /* BKTPopinControllerViewController13i.m in Sources */,
 				9B8247E71D6404BE005FC41D /* BKTPopin2ControllerViewController_QR1i.m in Sources */,
+				9B62C8C01D7BA2A0004D5DDA /* BKTPopin2ControllerViewController_QR3i_answer.m in Sources */,
 				9B8246C81D5A94D3005FC41D /* BKTPopinControllerViewController5i.m in Sources */,
 				9B4728DB1D7B8227004610C6 /* BKTPopinControllerViewControllerSensing1i.m in Sources */,
 				9BA8E5DC1A6876EB0015152B /* BKTPopin2ControllerViewController_feature3.m in Sources */,

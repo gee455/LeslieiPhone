@@ -125,7 +125,7 @@ certain death.</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raptorCage_11.png" id="CaH-BH-YKX">
-                                    <rect key="frame" x="0.0" y="1616" width="308" height="294"/>
+                                    <rect key="frame" x="4" y="1616" width="308" height="294"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess who these feet belongs to!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76T-CX-pMF">
@@ -143,9 +143,29 @@ certain death.</string>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HdO-PO-YfR">
                                     <rect key="frame" x="5" y="681" width="310" height="289"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
                                     <connections>
                                         <action selector="presentPopinPressed1:" destination="-1" eventType="touchUpInside" id="aQE-WP-VGK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7r1-cG-LcA">
+                                    <rect key="frame" x="7" y="1014" width="310" height="266"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="presentPopinPressed2:" destination="-1" eventType="touchUpInside" id="HFu-T8-m7f"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E0t-AV-zgo">
+                                    <rect key="frame" x="3" y="1318" width="310" height="266"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="presentPopinPressed3:" destination="-1" eventType="touchUpInside" id="3XY-wb-7XF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kMc-2w-GSg">
+                                    <rect key="frame" x="4" y="1616" width="310" height="266"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="presentPopinPressed4:" destination="-1" eventType="touchUpInside" id="QBW-1n-NI8"/>
                                     </connections>
                                 </button>
                             </subviews>

@@ -23,11 +23,15 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "BKTPopinControllerViewController.h"
 
-@interface BKTPopin2ControllerViewController_QR4i_answer : UIViewController <UIScrollViewDelegate, AVCaptureMetadataOutputObjectsDelegate>
+@interface BKTPopin2ControllerViewController_QR4i_answer : BKTPopinControllerViewController {
+    IBOutlet UIWebView* _youTubeBackground;
+}
 
-//QR Code
-@property (weak, nonatomic) IBOutlet UIView *viewPreview;
+//Youtube Video
+@property (nonatomic,strong) MPMoviePlayerController* mc;
 
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 

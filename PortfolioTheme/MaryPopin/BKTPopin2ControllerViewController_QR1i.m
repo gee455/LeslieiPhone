@@ -23,6 +23,9 @@
 
 #import "BKTPopin2ControllerViewController_QR1i.h"
 #import "BKTPopin2ControllerViewController_QR1i_answer.h"
+#import "BKTPopin2ControllerViewController_QR2i_answer.h"
+#import "BKTPopin2ControllerViewController_QR3i_answer.h"
+#import "BKTPopin2ControllerViewController_QR4i_answer.h"
 
 #import "UIViewController+MaryPopin.h"
 

@@ -24,6 +24,11 @@
 #import "BKTPopin2ControllerViewController_QR3i.h"
 #import "BKTPopin2ControllerViewController_QR1_answer.h"
 
+#import "BKTPopin2ControllerViewController_QR1i_answer.h"
+#import "BKTPopin2ControllerViewController_QR2i_answer.h"
+#import "BKTPopin2ControllerViewController_QR3i_answer.h"
+#import "BKTPopin2ControllerViewController_QR4i_answer.h"
+
 #import "UIViewController+MaryPopin.h"
 
 //#import "SWRevealViewController.h"
@@ -135,7 +140,7 @@
     
     if ([qrCode isEqual: @"b"]) {
         
-        BKTPopin2ControllerViewController_QR1_answer *popin1 = [[BKTPopin2ControllerViewController_QR1_answer alloc] init];
+        BKTPopin2ControllerViewController_QR3i_answer *popin1 = [[BKTPopin2ControllerViewController_QR3i_answer alloc] init];
         
         //Disable auto dismiss and removed semi-transparent background
         [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];

@@ -23,7 +23,7 @@
 
 #import "BKTPopin2ControllerViewController_QR4i_answer.h"
 #import "BKTPopin2ControllerViewController_QR1_answer.h"
-
+#import <AudioToolbox/AudioToolbox.h>
 #import "UIViewController+MaryPopin.h"
 
 //#import "SWRevealViewController.h"
@@ -55,47 +55,8 @@
 
 
 - (void)viewDidLoad {
-    //QR Code
-    // Initially make the captureSession object nil.
-    _captureSession = nil;
-    
-    // Begin loading the sound effect so to have it ready for playback when it's needed.
-    NSError *error;
-    
-    // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
-    // as the media type parameter.
-    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    
-    // Get an instance of the AVCaptureDeviceInput class using the previous device object.
-    AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&error];
-    
-    if (!input) {
-        // If any error occurs, simply log the description of it and don't continue any more.
-        NSLog(@"%@", [error localizedDescription]);
-    }
-    
-    // Initialize the captureSession object.
-    _captureSession = [[AVCaptureSession alloc] init];
-    // Set the input device on the capture session.
-    [_captureSession addInput:input];
-    
-    // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
-    AVCaptureMetadataOutput *captureMetadataOutput = [[AVCaptureMetadataOutput alloc] init];
-    [_captureSession addOutput:captureMetadataOutput];
-    
-    // Create a new serial dispatch queue.
-    dispatch_queue_t dispatchQueue;
-    dispatchQueue = dispatch_queue_create("myQueue", NULL);
-    [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispatchQueue];
-    //Array of QR Code Object Types
-    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObject:AVMetadataObjectTypeQRCode]];
-    
-    // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer.
-    _videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_captureSession];
-    [_videoPreviewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
-    [_videoPreviewLayer setFrame:_viewPreview.layer.bounds];
-    [_viewPreview.layer addSublayer:_videoPreviewLayer];
-    
+   
+     [self playMovie];
     
     [self.scrollView addSubview:self.Content];
     
@@ -108,7 +69,7 @@
     [super viewWillAppear:animated];
     
     [_scrollView setScrollEnabled:YES];
-    [_scrollView setContentSize:CGSizeMake(320, 1202)];
+    [_scrollView setContentSize:CGSizeMake(320, 479)];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -127,75 +88,53 @@
 {
     [_captureSession stopRunning];
 }
-
--(void)popinMethod:(id)qrCode {
-    //BKTPopinControllerViewController *popin = [[BKTPopinControllerViewController alloc] init];
+- (void) playMovie {
     
-    // BKTPopinControllerViewController2 *popin1 = [[BKTPopinControllerViewController2 alloc] init];
+    NSString*thePath=[[NSBundle mainBundle] pathForResource:@"Eagle" ofType:@"mp4"];
+    NSURL*theurl=[NSURL fileURLWithPath:thePath];
+    MPMoviePlayerController *controller = [[MPMoviePlayerController alloc]
+                                           initWithContentURL:theurl];
     
-    if ([qrCode isEqual: @"b"]) {
-        
-        BKTPopin2ControllerViewController_QR1_answer *popin1 = [[BKTPopin2ControllerViewController_QR1_answer alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-};
-
--(void)stopReading{
-    // Stop video capture and make the capture session object nil.
-    [_captureSession stopRunning];
+    self.mc = controller; //Super important
+    controller.view.frame =  CGRectMake(355, 175, 350, 194);//Set the size
+    
+    
+    [self.view addSubview:controller.view]; //Show the view
+    [controller play]; //Start playing
 }
-
--(void)handleMetadata:(id)metadata {
-    NSString *qrCode = [metadata stringValue];
-    
-    
-    //[self popinMethod];
-    
-    [self performSelectorOnMainThread:@selector(popinMethod:) withObject:qrCode waitUntilDone:NO];
-    
-    // Start video capture.
-    [_captureSession startRunning];
-    
-    
-    NSLog(@"%@", qrCode);
-}
-
-
-
-#pragma mark - AVCaptureMetadataOutputObjectsDelegate method implementation
-
--(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
-    
-    // Check if the metadataObjects array is not nil and it contains at least one object.
-    if (metadataObjects != nil && [metadataObjects count] > 0) {
-        // Get the metadata object.
-        AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
-        if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {
-            
-            [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-            [self performSelectorOnMainThread:@selector(handleMetadata:) withObject:metadataObj waitUntilDone:NO];
-            
-        }
-    }
-}
-
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+-(IBAction)buttonPressedWithSound:(id)sender {
+    
+    int randomSoundNumber = arc4random() % 1; //random number from 0 to 3
+    
+    NSLog(@"random sound number = %i", randomSoundNumber);
+    
+    NSString *effectTitle;
+    
+    switch (randomSoundNumber) {
+        case 0:
+            effectTitle = @"pfalcon";
+            break;
+            
+        default:
+            break;
+    }
+    
+    SystemSoundID soundID;
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:effectTitle ofType:@"wav"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+    
+    AudioServicesCreateSystemSoundID ((__bridge CFURLRef)soundUrl, &soundID);
+    AudioServicesPlaySystemSound(soundID);
+}
+
+
 
 
 - (IBAction)closeButtonPressed:(id)sender {

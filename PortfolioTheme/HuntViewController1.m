@@ -39,8 +39,23 @@
     
     [self.scrollView addSubview:self.Content];
     
-    // Tell the scroll view the size of the contents
-    self.scrollView.contentSize = CGSizeMake(720.0, 2000.0);
+    
+    #define IDIOM    UI_USER_INTERFACE_IDIOM()
+    #define IPAD     UIUserInterfaceIdiomPad
+    
+    if ( IDIOM == IPAD ) {
+        /* do something specifically for iPad. */
+        
+        // Tell the scroll view the size of the contents
+        self.scrollView.contentSize = CGSizeMake(720.0, 2000.0);
+        
+    } else {
+        /* do something specifically for iPhone or iPod touch. */
+        
+        // Tell the scroll view the size of the contents
+        self.scrollView.contentSize = CGSizeMake(320.0, 3200.0);
+    }
+
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     

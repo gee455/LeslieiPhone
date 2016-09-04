@@ -30,6 +30,9 @@
 
 //Popin Content
 #import "BKTPopin2ControllerViewController_QR1i.h"
+#import "BKTPopin2ControllerViewController_QR2i.h"
+#import "BKTPopin2ControllerViewController_QR3i.h"
+#import "BKTPopin2ControllerViewController_QR4i.h"
 
 @interface BKTPopinControllerViewController14i ()
 @property (nonatomic, strong) UIImageView *imageView;
@@ -81,6 +84,45 @@
 - (IBAction)presentPopinPressed1:(id)sender
 {
     BKTPopin2ControllerViewController_QR1i *popin = [[BKTPopin2ControllerViewController_QR1i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed2:(id)sender
+{
+    BKTPopin2ControllerViewController_QR2i *popin = [[BKTPopin2ControllerViewController_QR2i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed3:(id)sender
+{
+    BKTPopin2ControllerViewController_QR3i *popin = [[BKTPopin2ControllerViewController_QR3i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed4:(id)sender
+{
+    BKTPopin2ControllerViewController_QR4i *popin = [[BKTPopin2ControllerViewController_QR4i alloc] init];
     //Disable auto dismiss and removed semi-transparent background
     [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
     

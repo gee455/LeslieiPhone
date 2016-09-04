@@ -475,8 +475,6 @@
 		9B4728E11D7B82E8004610C6 /* BKTPopinControllerViewControllerSensing2i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4728DF1D7B82E8004610C6 /* BKTPopinControllerViewControllerSensing2i.xib */; };
 		9B4728E51D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4728E31D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.m */; };
 		9B4728E61D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4728E41D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.xib */; };
-		9B4728EA1D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4728E81D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.m */; };
-		9B4728EB1D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4728E91D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.xib */; };
 		9B4BCB581A58BD1300B61094 /* MBWPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4BCB571A58BD1300B61094 /* MBWPDetailViewController.m */; };
 		9B4BCB5B1A58C09300B61094 /* UIColor+MBWPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4BCB5A1A58C09300B61094 /* UIColor+MBWPExtensions.m */; };
 		9B4BCB601A596C2D00B61094 /* BKTPopin2ControllerViewController_QR1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4BCB5E1A596C2D00B61094 /* BKTPopin2ControllerViewController_QR1.m */; };
@@ -572,6 +570,16 @@
 		9B57B0051A684B5F006B281D /* pfalcon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9B57B0041A684B5F006B281D /* pfalcon.wav */; };
 		9B57B0091A685463006B281D /* BKTPopinControllerViewControllerFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57B0071A685463006B281D /* BKTPopinControllerViewControllerFeatures.m */; };
 		9B57B00A1A685463006B281D /* BKTPopinControllerViewControllerFeatures.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B57B0081A685463006B281D /* BKTPopinControllerViewControllerFeatures.xib */; };
+		9B62C8A01D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C89E1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.m */; };
+		9B62C8A11D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C89F1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.xib */; };
+		9B62C8A51D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8A31D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.m */; };
+		9B62C8A61D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8A41D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.xib */; };
+		9B62C8AA1D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8A81D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.m */; };
+		9B62C8AB1D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8A91D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.xib */; };
+		9B62C8AF1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8AD1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.m */; };
+		9B62C8B01D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8AE1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib */; };
+		9B62C8B41D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B62C8B21D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m */; };
+		9B62C8B51D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B62C8B31D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib */; };
 		9B8246AB1D5818DE005FC41D /* BKTPopinControllerViewController2i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8246A91D5818DE005FC41D /* BKTPopinControllerViewController2i.m */; };
 		9B8246AC1D5818DE005FC41D /* BKTPopinControllerViewController2i.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8246AA1D5818DE005FC41D /* BKTPopinControllerViewController2i.xib */; };
 		9B8246B11D582090005FC41D /* BKTPopinControllerViewController3i.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8246AF1D582090005FC41D /* BKTPopinControllerViewController3i.m */; };
@@ -1450,9 +1458,6 @@
 		9B4728E21D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing3i.h; sourceTree = "<group>"; };
 		9B4728E31D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing3i.m; sourceTree = "<group>"; };
 		9B4728E41D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing3i.xib; sourceTree = "<group>"; };
-		9B4728E71D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i .h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BKTPopinControllerViewControllerSensing4i .h"; sourceTree = "<group>"; };
-		9B4728E81D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing4i.m; sourceTree = "<group>"; };
-		9B4728E91D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing4i.xib; sourceTree = "<group>"; };
 		9B4BCB561A58BD1300B61094 /* MBWPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBWPDetailViewController.h; sourceTree = "<group>"; };
 		9B4BCB571A58BD1300B61094 /* MBWPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBWPDetailViewController.m; sourceTree = "<group>"; };
 		9B4BCB591A58C09300B61094 /* UIColor+MBWPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MBWPExtensions.h"; sourceTree = "<group>"; };
@@ -1567,6 +1572,21 @@
 		9B57B0061A685463006B281D /* BKTPopinControllerViewControllerFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerFeatures.h; sourceTree = "<group>"; };
 		9B57B0071A685463006B281D /* BKTPopinControllerViewControllerFeatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerFeatures.m; sourceTree = "<group>"; };
 		9B57B0081A685463006B281D /* BKTPopinControllerViewControllerFeatures.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerFeatures.xib; sourceTree = "<group>"; };
+		9B62C89D1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing4i.h; sourceTree = "<group>"; };
+		9B62C89E1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing4i.m; sourceTree = "<group>"; };
+		9B62C89F1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing4i.xib; sourceTree = "<group>"; };
+		9B62C8A21D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing1.h; sourceTree = "<group>"; };
+		9B62C8A31D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing1.m; sourceTree = "<group>"; };
+		9B62C8A41D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing1.xib; sourceTree = "<group>"; };
+		9B62C8A71D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing2.h; sourceTree = "<group>"; };
+		9B62C8A81D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing2.m; sourceTree = "<group>"; };
+		9B62C8A91D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing2.xib; sourceTree = "<group>"; };
+		9B62C8AC1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing3.h; sourceTree = "<group>"; };
+		9B62C8AD1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing3.m; sourceTree = "<group>"; };
+		9B62C8AE1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing3.xib; sourceTree = "<group>"; };
+		9B62C8B11D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewControllerSensing4.h; sourceTree = "<group>"; };
+		9B62C8B21D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewControllerSensing4.m; sourceTree = "<group>"; };
+		9B62C8B31D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewControllerSensing4.xib; sourceTree = "<group>"; };
 		9B8246A81D5818DE005FC41D /* BKTPopinControllerViewController2i.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTPopinControllerViewController2i.h; sourceTree = "<group>"; };
 		9B8246A91D5818DE005FC41D /* BKTPopinControllerViewController2i.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTPopinControllerViewController2i.m; sourceTree = "<group>"; };
 		9B8246AA1D5818DE005FC41D /* BKTPopinControllerViewController2i.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKTPopinControllerViewController2i.xib; sourceTree = "<group>"; };
@@ -2080,6 +2100,18 @@
 				9B4460111C8FBCE700085567 /* BKTPopinControllerViewController13.xib */,
 				9B4460121C8FBCE700085567 /* BKTPopinControllerViewController14.xib */,
 				9B4460131C8FBCE700085567 /* BKTPopinControllerViewController15.xib */,
+				9B62C8A21D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.h */,
+				9B62C8A31D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.m */,
+				9B62C8A41D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.xib */,
+				9B62C8A71D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.h */,
+				9B62C8A81D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.m */,
+				9B62C8A91D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.xib */,
+				9B62C8AC1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.h */,
+				9B62C8AD1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.m */,
+				9B62C8AE1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib */,
+				9B62C8B11D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.h */,
+				9B62C8B21D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m */,
+				9B62C8B31D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib */,
 			);
 			path = MaryPopin;
 			sourceTree = "<group>";
@@ -3075,9 +3107,9 @@
 				9B4728E21D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.h */,
 				9B4728E31D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.m */,
 				9B4728E41D7B87AA004610C6 /* BKTPopinControllerViewControllerSensing3i.xib */,
-				9B4728E71D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i .h */,
-				9B4728E81D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.m */,
-				9B4728E91D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.xib */,
+				9B62C89D1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.h */,
+				9B62C89E1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.m */,
+				9B62C89F1D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.xib */,
 			);
 			name = "iPhone Versions";
 			sourceTree = "<group>";
@@ -3761,6 +3793,7 @@
 				9B4460061C8FBC9300085567 /* BKTPopinControllerViewController2.xib in Resources */,
 				9B57AF5C1A65DC0A006B281D /* unlock2.png in Resources */,
 				9B4461931C9612DD00085567 /* Millipede@2x.png in Resources */,
+				9B62C8A61D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.xib in Resources */,
 				13E40FA719E3E43300B95175 /* icon_57x57.png in Resources */,
 				9B4460201C8FBCE700085567 /* BKTPopinControllerViewController15.xib in Resources */,
 				9BCB61291A5795C400119235 /* BKTPopin2ControllerViewController_critter1.xib in Resources */,
@@ -3802,6 +3835,7 @@
 				9B44611E1C910DB900085567 /* pin4@2x.png in Resources */,
 				9B8247321D5C1DE0005FC41D /* post13_15.png in Resources */,
 				9BFF748A1A57691000DAAF02 /* BKTPopin2ControllerViewController_about1.xib in Resources */,
+				9B62C8AB1D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.xib in Resources */,
 				9B44602F1C8FC26100085567 /* Intro_Screen5@2x.png in Resources */,
 				9BA8E5E81A68B63C0015152B /* feature3@2x.png in Resources */,
 				9B4728DC1D7B8227004610C6 /* BKTPopinControllerViewControllerSensing1i.xib in Resources */,
@@ -3835,6 +3869,7 @@
 				9B44609D1C90F68100085567 /* BKTPopin2ControllerViewController_map6.xib in Resources */,
 				9B8246D21D5C03D5005FC41D /* BKTPopinControllerViewController6i.xib in Resources */,
 				9BCB615A1A579B5800119235 /* BKTPopin2ControllerViewController_unlock1.xib in Resources */,
+				9B62C8B51D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.xib in Resources */,
 				9B8247E81D6404BE005FC41D /* BKTPopin2ControllerViewController_QR1i.xib in Resources */,
 				9B445FFB1C8FBB6F00085567 /* post11.png in Resources */,
 				9B4460A31C90F68100085567 /* BKTPopin2ControllerViewController_map9.xib in Resources */,
@@ -3865,6 +3900,7 @@
 				9B57AFE91A684099006B281D /* greenfrog.wav in Resources */,
 				0CC45ED31A0DD38600CD4618 /* TestPanel3.xib in Resources */,
 				13E40FAC19E3E43300B95175 /* icon_80x80.png in Resources */,
+				9B62C8B01D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.xib in Resources */,
 				134B26CA19C854900056D4F1 /* backTest.jpg in Resources */,
 				9B82476B1D5C26A2005FC41D /* post6_18.png in Resources */,
 				9B57AFEB1A684099006B281D /* woodfrog.wav in Resources */,
@@ -4003,7 +4039,7 @@
 				9B8247841D5CC93A005FC41D /* BKTPopinControllerViewControllerUnlock2i.xib in Resources */,
 				0CC45EDA1A0DD63B00CD4618 /* TestPanel1.xib in Resources */,
 				9BCB61331A57960200119235 /* critter1.png in Resources */,
-				9B4728EB1D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.xib in Resources */,
+				9B62C8A11D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.xib in Resources */,
 				139500C119B49DB800D0E151 /* logoExample.jpg in Resources */,
 				9B4461191C910DB900085567 /* pin9.png in Resources */,
 				9BCB61351A57960200119235 /* critter2.png in Resources */,
@@ -4287,6 +4323,7 @@
 				9B8247B01D62C429005FC41D /* BKTPopinControllerViewControllerNature1i.m in Sources */,
 				0C1726161A0EEE8400D55FF6 /* UIViewController+MaryPopin.m in Sources */,
 				9BCB61761A57B28700119235 /* MBXMapKit.m in Sources */,
+				9B62C8B41D7B9EC7004D5DDA /* BKTPopinControllerViewControllerSensing4.m in Sources */,
 				9B4BCB961A599FB500B61094 /* BKTPopin2ControllerViewController_QR3.m in Sources */,
 				9BA8E5D71A6876B50015152B /* BKTPopin2ControllerViewController_feature2.m in Sources */,
 				134B269C19C821BA0056D4F1 /* UIAlertView+AFNetworking.m in Sources */,
@@ -4318,14 +4355,16 @@
 				9B82473D1D5C20C1005FC41D /* BKTPopinControllerViewController14i.m in Sources */,
 				134B269E19C821BA0056D4F1 /* UIImageView+AFNetworking.m in Sources */,
 				9BFF74991A577AC900DAAF02 /* BKTPopin2ControllerViewController_nature1.m in Sources */,
+				9B62C8AF1D7B9E7B004D5DDA /* BKTPopinControllerViewControllerSensing3.m in Sources */,
 				13B3DFF519FF7AB00005557F /* DetailTableViewController.m in Sources */,
 				9B8247B71D62C4EA005FC41D /* BKTPopinControllerViewControllerNature2i.m in Sources */,
 				9B1185921A479AEE00A34481 /* BKTPopinControllerViewController14.m in Sources */,
 				9B1185581A477D1C00A34481 /* BKTPopinControllerViewController8.m in Sources */,
 				9B8246BB1D5A8654005FC41D /* BKTPopinControllerViewController4i.m in Sources */,
+				9B62C8A51D7B9C6C004D5DDA /* BKTPopinControllerViewControllerSensing1.m in Sources */,
 				9BFF74891A57691000DAAF02 /* BKTPopin2ControllerViewController_about1.m in Sources */,
 				13B3DFF719FF7AB00005557F /* MWFeedInfo.m in Sources */,
-				9B4728EA1D7B8849004610C6 /* BKTPopinControllerViewControllerSensing4i.m in Sources */,
+				9B62C8A01D7B9155004D5DDA /* BKTPopinControllerViewControllerSensing4i.m in Sources */,
 				9B82479C1D5CD3BD005FC41D /* BKTPopinControllerViewControllerCritter3i.m in Sources */,
 				9BCB61791A57B28700119235 /* MBXPointAnnotation.m in Sources */,
 				9B8246D11D5C03D5005FC41D /* BKTPopinControllerViewController6i.m in Sources */,
@@ -4352,6 +4391,7 @@
 				134B26B819C823D00056D4F1 /* AFHTTPSessionManager.m in Sources */,
 				9B4460AA1C90F68100085567 /* BKTPopin2ControllerViewController_map13.m in Sources */,
 				9B1185731A47805000A34481 /* BKTPopinControllerViewController11.m in Sources */,
+				9B62C8AA1D7B9D89004D5DDA /* BKTPopinControllerViewControllerSensing2.m in Sources */,
 				9B8247CC1D62C913005FC41D /* BKTPopinControllerViewControllerNature5i.m in Sources */,
 				9B4460B01C90F68100085567 /* BKTPopin2ControllerViewController_map16.m in Sources */,
 				0CC45E9F1A0DCFCB00CD4618 /* MYBlurIntroductionView.m in Sources */,

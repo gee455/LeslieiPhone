@@ -88,7 +88,10 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rR-bJ-LOc">
                                     <rect key="frame" x="28" y="251" width="258" height="265"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <mutableString key="text">Inside our Critter House visitors get an up close look at the diversity of Michigan native as well as non-native wildlife. Here you will also discover the amazing behaviors and adaptations of animals within naturalistic habitats. Some of the animals you will observe are former pets or have been rescued and are now serving as educational ambassadors. Our animals appear in on-site programming, visit classrooms, and even attend special events. Join us during Critter House open hours to learn more about these unique and fascinating critters.</mutableString>
+                                    <string key="text">Inside our Critter House visitors get an up close look at the diversity of 
+Michigan native as well as non-native wildlife. Here you will also discover the amazing behaviors and adaptations of animals within naturalistic habitats. Some of the animals you will observe are former pets or have been rescued and are now serving as educational ambassadors. Our animals appear in 
+on-site programming, visit classrooms, and even attend special events. Join us during Critter House open hours to learn more about these unique and 
+fascinating critters.</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -121,35 +124,44 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Nm-Yj-x2w">
                                     <rect key="frame" x="22" y="1246" width="273" height="60"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Bearded DragonPogona vitticeps(Click to see more)</string>
+                                    <string key="text">Bearded Dragon
+Pogona vitticeps
+(Click to see more)</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zb2-hL-GHk">
                                     <rect key="frame" x="21" y="1501" width="273" height="60"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Domestic RabbitOryctolagus cuniculus(Click to see more)</string>
+                                    <string key="text">Domestic Rabbit
+Oryctolagus cuniculus
+(Click to see more)</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76T-CX-pMF">
                                     <rect key="frame" x="24" y="1758" width="273" height="60"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Painted TurtleChrysemys picta(Click to see more)</string>
+                                    <string key="text">Painted Turtle
+Chrysemys picta
+(Click to see more)</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RYm-5C-RlU">
                                     <rect key="frame" x="21" y="2026" width="273" height="60"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">Tiger SalamanderAmbystoma tigrinum(Click to see more)</string>
+                                    <string key="text">Tiger Salamander
+Ambystoma tigrinum
+(Click to see more)</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhI-hf-ORI">
                                     <rect key="frame" x="8" y="123" width="287" height="95"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <string key="text">• Observe live animals in the Critter House during open hours. • Click on the pictures below to learn more about some of the animals that live in the Critter House.</string>
+                                    <string key="text">• Observe live animals in the Critter House during open hours. 
+• Click on the pictures below to learn more about some of the animals that live in the Critter House.</string>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -163,6 +175,66 @@
                                     </state>
                                     <connections>
                                         <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="5Mr-uC-AYN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JLb-f5-zCb">
+                                    <rect key="frame" x="181" y="644" width="73" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="presentPopinPressed6:" destination="-1" eventType="touchUpInside" id="jS6-87-tfy"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nR4-eb-Qaz">
+                                    <rect key="frame" x="97" y="890" width="73" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="presentPopinPressed5:" destination="-1" eventType="touchUpInside" id="QXf-T7-b92"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HS8-zZ-KP8">
+                                    <rect key="frame" x="8" y="1062" width="304" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="presentPopinPressed1:" destination="-1" eventType="touchUpInside" id="6Kz-UN-IdK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qhA-7k-WQm">
+                                    <rect key="frame" x="8" y="1314" width="304" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="presentPopinPressed2:" destination="-1" eventType="touchUpInside" id="DM0-0i-aVn"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IaK-k0-ML9">
+                                    <rect key="frame" x="7" y="1564" width="304" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="presentPopinPressed3:" destination="-1" eventType="touchUpInside" id="hYe-Wv-dS4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RHb-FT-FhV">
+                                    <rect key="frame" x="8" y="1827" width="304" height="186"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="presentPopinPressed4:" destination="-1" eventType="touchUpInside" id="tsP-Je-wFR"/>
                                     </connections>
                                 </button>
                             </subviews>

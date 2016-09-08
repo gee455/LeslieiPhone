@@ -34,6 +34,29 @@
 #import "BKTPopinControllerViewController2i.h"
 #import "BKTPopinControllerViewController3i.h"
 #import "BKTPopinControllerViewController4i.h"
+#import "BKTPopinControllerViewController5i.h"
+#import "BKTPopinControllerViewController6i.h"
+#import "BKTPopinControllerViewController7i.h"
+#import "BKTPopinControllerViewController8i.h"
+#import "BKTPopinControllerViewController9i.h"
+#import "BKTPopinControllerViewController10i.h"
+#import "BKTPopinControllerViewController11i.h"
+#import "BKTPopinControllerViewController12i.h"
+#import "BKTPopinControllerViewController13i.h"
+#import "BKTPopinControllerViewController14i.h"
+#import "BKTPopinControllerViewController15i.h"
+
+//iPad Sensing Nature Trail
+#import "BKTPopinControllerViewControllerSensing1.h"
+#import "BKTPopinControllerViewControllerSensing2.h"
+#import "BKTPopinControllerViewControllerSensing3.h"
+#import "BKTPopinControllerViewControllerSensing4.h"
+
+//iPhone Sensing Nature Trail
+#import "BKTPopinControllerViewControllerSensing1i.h"
+#import "BKTPopinControllerViewControllerSensing2i.h"
+#import "BKTPopinControllerViewControllerSensing3i.h"
+#import "BKTPopinControllerViewControllerSensing4i.h"
 
 //Map Popin
 #import "BKTPopin2ControllerViewController_map1.h"
@@ -69,7 +92,6 @@
 //Example
 #define kRegularGeographyClassMapID @"examples.map-zmy97flj"
 #define kRetinaGeographyClassMapID  @"examples.1fjyxmhi"
-
 
 
 @interface MainViewController ()
@@ -109,17 +131,17 @@
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithHexString:kTintColorHex];
     
-    self.navigationItem.rightBarButtonItem = [[RMUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
-    self.navigationItem.rightBarButtonItem.tintColor = self.navigationController.navigationBar.tintColor;
+//    self.navigationItem.rightBarButtonItem = [[RMUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+//    self.navigationItem.rightBarButtonItem.tintColor = self.navigationController.navigationBar.tintColor;
     
     //self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:nil action:nil];
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStyleBordered target:nil action:nil];
-
-
+    
+    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
-
+    
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
@@ -127,7 +149,7 @@
     //self.navigationItem.leftBarButtonItem = _sidebarButton;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self.revealViewController action:@selector(revealToggle:)];
-
+    
     self.navigationController.navigationBar.translucent = YES;
     
     // Set the gesture
@@ -138,10 +160,12 @@
                                                  blue:44/255.0
                                                 alpha:1.0];
     
+
+    
     //QR Code
     // Initially make the captureSession object nil.
     _captureSession = nil;
-	
+    
     // Begin loading the sound effect so to have it ready for playback when it's needed.
     NSError *error;
     
@@ -161,7 +185,7 @@
     _captureSession = [[AVCaptureSession alloc] init];
     // Set the input device on the capture session.
     [_captureSession addInput:input];
-	
+    
     // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
     AVCaptureMetadataOutput *captureMetadataOutput = [[AVCaptureMetadataOutput alloc] init];
     [_captureSession addOutput:captureMetadataOutput];
@@ -197,12 +221,12 @@
     [self.imageView addSubview: button];
     
     //Pin #2 Critter House (C)
-//    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button1 setBackgroundImage:[UIImage imageNamed:@"pinC"] forState:UIControlStateNormal];
-//    button1.frame = CGRectMake(422.0, 368.0, 30.0, 55.0);
-//    [button1 addTarget:self action:@selector(buttonPopin:)forControlEvents:UIControlEventTouchUpInside];
-//    button1.tag = 199;
-//    [self.imageView addSubview: button1];
+    //    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    //    [button1 setBackgroundImage:[UIImage imageNamed:@"pinC"] forState:UIControlStateNormal];
+    //    button1.frame = CGRectMake(422.0, 368.0, 30.0, 55.0);
+    //    [button1 addTarget:self action:@selector(buttonPopin:)forControlEvents:UIControlEventTouchUpInside];
+    //    button1.tag = 199;
+    //    [self.imageView addSubview: button1];
     
     //Pin #3 Flower Garden (Flower)
     UIButton *button2 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -341,9 +365,9 @@
     button17.tag = 19;
     [self.imageView addSubview: button17];
     
-  
     
-  
+    
+    
     
     self.imageView.userInteractionEnabled = YES;
     
@@ -362,7 +386,8 @@
     twoFingerTapRecognizer.numberOfTapsRequired = 1;
     twoFingerTapRecognizer.numberOfTouchesRequired = 2;
     [self.scrollView addGestureRecognizer:twoFingerTapRecognizer];
-	
+    
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -387,14 +412,14 @@
     // 6
     [self centerScrollViewContents];
     
-
+    
 }
 
 
 
 -(void)viewWillDisappear:(BOOL)animated
 {
-	[_captureSession stopRunning];
+    [_captureSession stopRunning];
 }
 
 - (void)didReceiveMemoryWarning
@@ -417,43 +442,43 @@
     
     //BOOL downloaded = [[NSUserDefaults standardUserDefaults] boolForKey: @"downloaded"];
     //if (!downloaded) {
-        //download code here
-        
-        //Create Stock Panel with header
-        //UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
-        MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel1"];
-        
-        //Create Stock Panel With Image
-        MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel2"];
-        
-        //Create Panel From Nib
-        MYIntroductionPanel *panel3 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel3"];
-        
-        //Create custom panel with events
-        MYCustomPanel *panel4 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel4"];
+    //download code here
     
-        //Create custom panel with events
-        MYCustomPanel *panel5 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel5"];
+    //Create Stock Panel with header
+    //UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
+    MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel1"];
     
-        //Add panels to an array
-        NSArray *panels = @[panel1, panel2, panel3, panel4, panel5];
-        
-        //Create the introduction view and set its delegate
-        MYBlurIntroductionView *introductionView = [[MYBlurIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-        introductionView.delegate = self;
-        introductionView.BackgroundImageView.image = [UIImage imageNamed:@"grid.png"];
-        [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
-        //introductionView.LanguageDirection = MYLanguageDirectionRightToLeft;
-        
-        //Build the introduction with desired panels
-        [introductionView buildIntroductionWithPanels:panels];
-        
-        //Add the introduction to your view
-        [self.view addSubview:introductionView];
+    //Create Stock Panel With Image
+    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel2"];
     
-        self.navigationController.navigationBar.hidden = NO;
+    //Create Panel From Nib
+    MYIntroductionPanel *panel3 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel3"];
     
-         self.title = @"Leslie Science & Nature Center";
+    //Create custom panel with events
+    MYCustomPanel *panel4 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel4"];
+    
+    //Create custom panel with events
+    MYCustomPanel *panel5 = [[MYCustomPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"TestPanel5"];
+    
+    //Add panels to an array
+    NSArray *panels = @[panel1, panel2, panel3, panel4, panel5];
+    
+    //Create the introduction view and set its delegate
+    MYBlurIntroductionView *introductionView = [[MYBlurIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    introductionView.delegate = self;
+    introductionView.BackgroundImageView.image = [UIImage imageNamed:@"grid.png"];
+    [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
+    //introductionView.LanguageDirection = MYLanguageDirectionRightToLeft;
+    
+    //Build the introduction with desired panels
+    [introductionView buildIntroductionWithPanels:panels];
+    
+    //Add the introduction to your view
+    [self.view addSubview:introductionView];
+    
+    self.navigationController.navigationBar.hidden = NO;
+    
+    self.title = @"Leslie Science & Nature Center";
     
     //[[NSUserDefaults standardUserDefaults] setBool:YES forKey: @"downloaded"];
     //}
@@ -466,53 +491,53 @@
     
     /* When the introduction finishes up, the map will load. This is to prevent it from loading too many times and breaking,*/
     
-     self.title = @"Leslie Science & Nature Center";
+    self.title = @"Leslie Science & Nature Center";
     
     NSURL *htmlFile = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mapView" ofType:@"html"] isDirectory:NO];
     [wv loadRequest:[NSURLRequest requestWithURL:htmlFile]];
-
+    
     /* Commenting out native mapbox */
     
     /*
-    // this auto-enables annotations based on simplestyle data for this map (see http://mapbox.com/developers/simplestyle/ for more info)
-    //
-    self.mapView.tileSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID enablingDataOnMapView:self.mapView];
-    
-    self.mapView.zoom = 8;
-    
-    [self.mapView setConstraintsSouthWest:[self.mapView.tileSource latitudeLongitudeBoundingBox].southWest
-                                northEast:[self.mapView.tileSource latitudeLongitudeBoundingBox].northEast];
-    
-    self.mapView.showsUserLocation = YES;
-    
-    if ([UIView instancesRespondToSelector:@selector(setTintColor:)])
-        self.mapView.tintColor = self.navigationController.navigationBar.tintColor;
-    
-    // zoom in to markers after launch
-    //
-    __weak RMMapView *weakMap = self.mapView; // avoid block-based memory leak
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^(void)
-                   {
-                       float degreeRadius = 500.f / 110000.f; // (9000m / 110km per degree latitude)
-                       
-                       CLLocationCoordinate2D centerCoordinate = [((RMMapboxSource *)self.mapView.tileSource) centerCoordinate];
-                       
-                       RMSphericalTrapezium zoomBounds = {
-                           .southWest = {
-                               .latitude  = centerCoordinate.latitude  - degreeRadius,
-                               .longitude = centerCoordinate.longitude - degreeRadius
-                           },
-                           .northEast = {
-                               .latitude  = centerCoordinate.latitude  + degreeRadius,
-                               .longitude = centerCoordinate.longitude + degreeRadius
-                           }
-                       };
-                       
-                       [weakMap zoomWithLatitudeLongitudeBoundsSouthWest:zoomBounds.southWest
-                                                               northEast:zoomBounds.northEast
-                                                                animated:YES];
-                   });
+     // this auto-enables annotations based on simplestyle data for this map (see http://mapbox.com/developers/simplestyle/ for more info)
+     //
+     self.mapView.tileSource = [[RMMapboxSource alloc] initWithMapID:kMapboxMapID enablingDataOnMapView:self.mapView];
+     
+     self.mapView.zoom = 8;
+     
+     [self.mapView setConstraintsSouthWest:[self.mapView.tileSource latitudeLongitudeBoundingBox].southWest
+     northEast:[self.mapView.tileSource latitudeLongitudeBoundingBox].northEast];
+     
+     self.mapView.showsUserLocation = YES;
+     
+     if ([UIView instancesRespondToSelector:@selector(setTintColor:)])
+     self.mapView.tintColor = self.navigationController.navigationBar.tintColor;
+     
+     // zoom in to markers after launch
+     //
+     __weak RMMapView *weakMap = self.mapView; // avoid block-based memory leak
+     
+     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^(void)
+     {
+     float degreeRadius = 500.f / 110000.f; // (9000m / 110km per degree latitude)
+     
+     CLLocationCoordinate2D centerCoordinate = [((RMMapboxSource *)self.mapView.tileSource) centerCoordinate];
+     
+     RMSphericalTrapezium zoomBounds = {
+     .southWest = {
+     .latitude  = centerCoordinate.latitude  - degreeRadius,
+     .longitude = centerCoordinate.longitude - degreeRadius
+     },
+     .northEast = {
+     .latitude  = centerCoordinate.latitude  + degreeRadius,
+     .longitude = centerCoordinate.longitude + degreeRadius
+     }
+     };
+     
+     [weakMap zoomWithLatitudeLongitudeBoundsSouthWest:zoomBounds.southWest
+     northEast:zoomBounds.northEast
+     animated:YES];
+     });
      
      */
     
@@ -650,8 +675,8 @@
         }];
         
     }
-
-
+    
+    
     
     if (tid == 2) {
         // deal with downButton event here ..
@@ -668,7 +693,7 @@
         }];
         
     }
-
+    
     
     
     if (tid == 3) {
@@ -922,243 +947,636 @@
 
 
 -(void)popinMethod:(id)qrCode {
-    //BKTPopinControllerViewController *popin = [[BKTPopinControllerViewController alloc] init];
     
-   // BKTPopinControllerViewController2 *popin1 = [[BKTPopinControllerViewController2 alloc] init];
     
-    if ([qrCode isEqual: @"1"]) {
+    
+    #define IDIOM    UI_USER_INTERFACE_IDIOM()
+    #define IPAD     UIUserInterfaceIdiomPad
+    
+    if ( IDIOM == IPAD ) {
+        /* do something specifically for iPad. */
         
-        //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
-        BKTPopinControllerViewController3i *popin1 = [[BKTPopinControllerViewController3i alloc] init];
         
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+        if ([qrCode isEqual: @"1"]) {
+            
+            //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
+            BKTPopinControllerViewController3 *popin1 = [[BKTPopinControllerViewController3 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
         
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
+        if ([qrCode isEqual: @"2"]) {
+            
+            
+            BKTPopinControllerViewController4  *popin1 = [[BKTPopinControllerViewController4  alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        
+        if ([qrCode isEqual: @"3"]) {
+            
+            
+            BKTPopinControllerViewController5 *popin1 = [[BKTPopinControllerViewController5 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"4"]) {
+            
+            
+            BKTPopinControllerViewController6 *popin1 = [[BKTPopinControllerViewController6 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"5"]) {
+            
+            
+            BKTPopinControllerViewController7 *popin1 = [[BKTPopinControllerViewController7 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        if ([qrCode isEqual: @"6"]) {
+            
+            
+            BKTPopinControllerViewController8 *popin1 = [[BKTPopinControllerViewController8 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"7"]) {
+            
+            
+            BKTPopinControllerViewController9 *popin1 = [[BKTPopinControllerViewController9 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"8"]) {
+            
+            
+            BKTPopinControllerViewController10 *popin1 = [[BKTPopinControllerViewController10 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"9"]) {
+            
+            
+            BKTPopinControllerViewController11 *popin1 = [[BKTPopinControllerViewController11 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"10"]) {
+            
+            
+            BKTPopinControllerViewController12 *popin1 = [[BKTPopinControllerViewController12 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"11"]) {
+            
+            
+            BKTPopinControllerViewController13 *popin1 = [[BKTPopinControllerViewController13 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"12"]) {
+            
+            
+            BKTPopinControllerViewController14 *popin1 = [[BKTPopinControllerViewController14 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"13"]) {
+            
+            
+            BKTPopinControllerViewController15 *popin1 = [[BKTPopinControllerViewController15 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"14"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing2 *popin1 = [[BKTPopinControllerViewControllerSensing2 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"15"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing3 *popin1 = [[BKTPopinControllerViewControllerSensing3 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"16"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing4 *popin1 = [[BKTPopinControllerViewControllerSensing4 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"17"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing1 *popin1 = [[BKTPopinControllerViewControllerSensing1 alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
 
+        
+        
+    } else {
+        /* do something specifically for iPhone or iPod touch. */
+        
+        
+        if ([qrCode isEqual: @"1"]) {
+            
+            //Changing to "BKTPopinControllerViewController3i" to test out iPhone formatted version, but will need to make it so it detects iPhone versus iPad versions.
+            BKTPopinControllerViewController3i *popin1 = [[BKTPopinControllerViewController3i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"2"]) {
+            
+            
+            BKTPopinControllerViewController4i  *popin1 = [[BKTPopinControllerViewController4i  alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        
+        if ([qrCode isEqual: @"3"]) {
+            
+            
+            BKTPopinControllerViewController5i *popin1 = [[BKTPopinControllerViewController5i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"4"]) {
+            
+            
+            BKTPopinControllerViewController6i *popin1 = [[BKTPopinControllerViewController6i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"5"]) {
+            
+            
+            BKTPopinControllerViewController7i *popin1 = [[BKTPopinControllerViewController7i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        if ([qrCode isEqual: @"6"]) {
+            
+            
+            BKTPopinControllerViewController8i *popin1 = [[BKTPopinControllerViewController8i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"7"]) {
+            
+            
+            BKTPopinControllerViewController9i *popin1 = [[BKTPopinControllerViewController9i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"8"]) {
+            
+            
+            BKTPopinControllerViewController11i *popin1 = [[BKTPopinControllerViewController11i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"9"]) {
+            
+            
+            BKTPopinControllerViewController10i *popin1 = [[BKTPopinControllerViewController10i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"10"]) {
+            
+            
+            BKTPopinControllerViewController12i *popin1 = [[BKTPopinControllerViewController12i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"11"]) {
+            
+            
+            BKTPopinControllerViewController13i *popin1 = [[BKTPopinControllerViewController13i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"12"]) {
+            
+            
+            BKTPopinControllerViewController14i *popin1 = [[BKTPopinControllerViewController14i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"13"]) {
+            
+            
+            BKTPopinControllerViewController15i *popin1 = [[BKTPopinControllerViewController15i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"14"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing2i *popin1 = [[BKTPopinControllerViewControllerSensing2i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"15"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing3i *popin1 = [[BKTPopinControllerViewControllerSensing3i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"16"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing4i *popin1 = [[BKTPopinControllerViewControllerSensing4i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
+        
+        if ([qrCode isEqual: @"17"]) {
+            
+            
+            BKTPopinControllerViewControllerSensing1i *popin1 = [[BKTPopinControllerViewControllerSensing1i alloc] init];
+            
+            //Disable auto dismiss and removed semi-transparent background
+            [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+            [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
+            
+            //Configure transition direction
+            [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+            [self presentPopinController:popin1 animated:YES completion:^{
+                NSLog(@"Popin presented !");
+            }];
+            
+            
+        };
 
-    };
+    }
     
-    if ([qrCode isEqual: @"2"]) {
-        
-        
-        BKTPopinControllerViewController4i  *popin1 = [[BKTPopinControllerViewController4i  alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-    
-        
-    };
-    
-    
-    if ([qrCode isEqual: @"3"]) {
-        
-        
-        BKTPopinControllerViewController5 *popin1 = [[BKTPopinControllerViewController5 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"4"]) {
-        
-        
-        BKTPopinControllerViewController6 *popin1 = [[BKTPopinControllerViewController6 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"5"]) {
-        
-        
-        BKTPopinControllerViewController7 *popin1 = [[BKTPopinControllerViewController7 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    if ([qrCode isEqual: @"6"]) {
-        
-        
-        BKTPopinControllerViewController8 *popin1 = [[BKTPopinControllerViewController8 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"7"]) {
-        
-        
-        BKTPopinControllerViewController9 *popin1 = [[BKTPopinControllerViewController9 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"8"]) {
-        
-        
-        BKTPopinControllerViewController10 *popin1 = [[BKTPopinControllerViewController10 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"9"]) {
-        
-        
-        BKTPopinControllerViewController11 *popin1 = [[BKTPopinControllerViewController11 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"10"]) {
-        
-        
-        BKTPopinControllerViewController12 *popin1 = [[BKTPopinControllerViewController12 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"11"]) {
-        
-        
-        BKTPopinControllerViewController13 *popin1 = [[BKTPopinControllerViewController13 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"12"]) {
-        
-        
-        BKTPopinControllerViewController14 *popin1 = [[BKTPopinControllerViewController14 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
-    
-    if ([qrCode isEqual: @"13"]) {
-        
-        
-        BKTPopinControllerViewController15 *popin1 = [[BKTPopinControllerViewController15 alloc] init];
-        
-        //Disable auto dismiss and removed semi-transparent background
-        [popin1 setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
-        [popin1 setPopinOptions:BKTPopinDisableParallaxEffect];
-        
-        //Configure transition direction
-        [popin1 setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
-        [self presentPopinController:popin1 animated:YES completion:^{
-            NSLog(@"Popin presented !");
-        }];
-        
-        
-    };
     
 }
 
@@ -1169,7 +1587,7 @@
 }
 
 -(void)handleMetadata:(id)metadata {
-	NSString *qrCode = [metadata stringValue];
+    NSString *qrCode = [metadata stringValue];
     
     
     //[self popinMethod];
@@ -1180,7 +1598,7 @@
     [_captureSession startRunning];
     
     
-	NSLog(@"%@", qrCode);
+    NSLog(@"%@", qrCode);
 }
 
 
@@ -1194,11 +1612,11 @@
         // Get the metadata object.
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
         if ([[metadataObj type] isEqualToString:AVMetadataObjectTypeQRCode]) {
-			
+            
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
-			[self performSelectorOnMainThread:@selector(handleMetadata:) withObject:metadataObj waitUntilDone:NO];
-			
-                    }
+            [self performSelectorOnMainThread:@selector(handleMetadata:) withObject:metadataObj waitUntilDone:NO];
+            
+        }
     }
 }
 

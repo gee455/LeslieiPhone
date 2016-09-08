@@ -179,40 +179,6 @@
 
 
 
-- (IBAction)showSuccess:(id)sender
-{
-    
-    NSString *kSuccessTitle = @"Good Job!";
-    NSString *kSubtitle = @"You found the mouse! Great observation skills!";
-    NSString *kButtonTitle = @"Done";
-    
-    SCLAlertView *alert = [[SCLAlertView alloc] init];
-    
-    //    SCLButton *button = [alert addButton:@"First Button" target:self selector:@selector(firstButton)];
-    //
-    //    button.layer.borderWidth = 2.0f;
-    //
-    //    button.buttonFormatBlock = ^NSDictionary* (void)
-    //    {
-    //        NSMutableDictionary *buttonConfig = [[NSMutableDictionary alloc] init];
-    //
-    //        [buttonConfig setObject:[UIColor whiteColor] forKey:@"backgroundColor"];
-    //        [buttonConfig setObject:[UIColor blackColor] forKey:@"textColor"];
-    //        [buttonConfig setObject:[UIColor greenColor] forKey:@"borderColor"];
-    //
-    //        return buttonConfig;
-    //    };
-    
-    //    [alert addButton:@"Second Button" actionBlock:^(void) {
-    //        NSLog(@"Second button tapped");
-    //    }];
-    
-    alert.soundURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/right_answer.mp3", [[NSBundle mainBundle] resourcePath]]];
-    
-    [alert showSuccess:self title:kSuccessTitle subTitle:kSubtitle closeButtonTitle:kButtonTitle duration:0.0f];
-}
-
-
 - (void)firstButton
 {
     NSLog(@"First button tapped");

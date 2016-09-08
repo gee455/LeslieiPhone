@@ -10,6 +10,7 @@
 #import "PortfolioViewController.h"
 #import "SWRevealViewController.h"
 #import "AboutViewController.h"
+#import "AboutViewControlleriPhone.h"
 #import "CollectionViewController.h"
 #import "ProductsViewController.h"
 #import "BlogPostViewController.h"
@@ -130,6 +131,7 @@
     NSInteger row = indexPath.row;
     
     UIViewController *newFrontController = nil;
+    
     
     if (row == 0)
     {

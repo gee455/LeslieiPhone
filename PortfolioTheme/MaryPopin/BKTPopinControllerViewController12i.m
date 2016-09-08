@@ -75,7 +75,7 @@
     [super viewWillAppear:animated];
     
     [_scrollView setScrollEnabled:YES];
-    [_scrollView setContentSize:CGSizeMake(320, 1971)];
+    [_scrollView setContentSize:CGSizeMake(320, 776)];
 }
 
 - (void)viewDidUnload

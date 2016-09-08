@@ -28,6 +28,12 @@
 //#import "SWRevealViewController.h"
 #import "SCLAlertView.h"
 
+//Popin Content
+#import "BKTPopin2ControllerViewController_QR1i.h"
+#import "BKTPopin2ControllerViewController_QR2i.h"
+#import "BKTPopin2ControllerViewController_QR3i.h"
+#import "BKTPopin2ControllerViewController_QR4i.h"
+
 @interface BKTPopinControllerViewController14i ()
 @property (nonatomic, strong) UIImageView *imageView;
 
@@ -68,7 +74,63 @@
     
     // Tell the scroll view the size of the contents
     self.scrollView.contentSize = image.size;
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    NSURL *url = [NSURL URLWithString:@"https://a.tiles.mapbox.com/v4/cgee.klegg5i6/page.html?access_token=pk.eyJ1IjoiY2dlZSIsImEiOiJnVVJGYmpBIn0.QEv8onciTixxHA--hpOGMA#18/42.30065/-83.72852"];
+    [self.myWebView loadRequest:[NSURLRequest requestWithURL:url]];
   
+}
+
+- (IBAction)presentPopinPressed1:(id)sender
+{
+    BKTPopin2ControllerViewController_QR1i *popin = [[BKTPopin2ControllerViewController_QR1i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed2:(id)sender
+{
+    BKTPopin2ControllerViewController_QR2i *popin = [[BKTPopin2ControllerViewController_QR2i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed3:(id)sender
+{
+    BKTPopin2ControllerViewController_QR3i *popin = [[BKTPopin2ControllerViewController_QR3i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed4:(id)sender
+{
+    BKTPopin2ControllerViewController_QR4i *popin = [[BKTPopin2ControllerViewController_QR4i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -28,6 +28,22 @@
 //#import "SWRevealViewController.h"
 #import "SCLAlertView.h"
 
+//Popin Content
+#import "BKTPopin2ControllerViewController_critter1.h"
+#import "BKTPopin2ControllerViewController_critter2.h"
+#import "BKTPopin2ControllerViewController_critter3.h"
+#import "BKTPopin2ControllerViewController_critter4.h"
+#import "BKTPopin2ControllerViewController_unlock1i.h"
+#import "BKTPopin2ControllerViewController_unlock2.h"
+
+//Feature Pop-in Content
+#import "BKTPopinControllerViewControllerUnlock1i.h"
+#import "BKTPopinControllerViewControllerUnlock2i.h"
+#import "BKTPopinControllerViewControllerCritter1i.h"
+#import "BKTPopinControllerViewControllerCritter2i.h"
+#import "BKTPopinControllerViewControllerCritter3i.h"
+#import "BKTPopinControllerViewControllerCritter4i.h"
+
 @interface BKTPopinControllerViewController13i ()
 @property (nonatomic, strong) UIImageView *imageView;
 
@@ -95,6 +111,85 @@
         NSLog(@"Popin dismissed !");
     }];
 }
+
+- (IBAction)presentPopinPressed1:(id)sender
+{
+    BKTPopinControllerViewControllerCritter1i *popin = [[BKTPopinControllerViewControllerCritter1i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed2:(id)sender
+{
+    BKTPopinControllerViewControllerCritter2i *popin = [[BKTPopinControllerViewControllerCritter2i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed3:(id)sender
+{
+    BKTPopinControllerViewControllerCritter3i *popin = [[BKTPopinControllerViewControllerCritter3i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed4:(id)sender
+{
+    BKTPopinControllerViewControllerCritter4i *popin = [[BKTPopinControllerViewControllerCritter4i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed5:(id)sender
+{
+    BKTPopinControllerViewControllerUnlock1i *popin = [[BKTPopinControllerViewControllerUnlock1i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
+- (IBAction)presentPopinPressed6:(id)sender
+{
+    BKTPopinControllerViewControllerUnlock2i *popin = [[BKTPopinControllerViewControllerUnlock2i alloc] init];
+    //Disable auto dismiss and removed semi-transparent background
+    [popin setPopinOptions:BKTPopinDisableAutoDismiss|BKTPopinDimmingViewStyleNone];
+    
+    //Configure transition direction
+    [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+    [self presentPopinController:popin animated:YES completion:^{
+        NSLog(@"Popin presented !");
+    }];
+}
+
 
 
 @end

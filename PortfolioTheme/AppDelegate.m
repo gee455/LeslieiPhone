@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Strings.h"
 #import <Parse/Parse.h>
+@import GoogleMaps; //Google Maps API
 
 @implementation AppDelegate
 
@@ -35,6 +36,7 @@
                                                          UIRemoteNotificationTypeAlert |
                                                          UIRemoteNotificationTypeSound)];
     }
+    [GMSServices provideAPIKey:@"AIzaSyBvyydCc4p6msVFCtCknZPZk8bO-AgV5Sg"]; //Google Maps API
     return YES;
 }
 							

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKTPopin2ControllerViewController_about1i">
+            <connections>
+                <outlet property="Content" destination="T2Q-pi-qVl" id="Tut-i7-12Q"/>
+                <outlet property="scrollView" destination="h69-Rk-6Ww" id="8Of-RB-Qiv"/>
+                <outlet property="view" destination="1" id="yTb-ML-RXb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1026"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="h69-Rk-6Ww">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1026"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="T2Q-pi-qVl" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1026"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Reach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ea7-1Z-j0a">
+                                    <rect key="frame" x="8" y="90" width="177" height="27"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="23"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="49" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rR-bJ-LOc">
+                                    <rect key="frame" x="18" y="338" width="285" height="502"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <mutableString key="text">LSNC was founded as part of the City of Ann Arbor in 1986, and became its own 501(c)3 nonprofit in 2007.  As a community institution, we have cultivated and provided high-quality environmental education experiences for people of all ages, backgrounds, and abilities.  Our expertly trained staff utilize birds of prey, reptiles, and other animals to share an environmental education message with our audiences. We also work to support those who may otherwise not have access to nature and nature-based sciences through partnerships with C.S. Mott Children’s Hospital, VA Hospital, assisted living facilities and several area non-profits serving homeless youth and families. As a community hub, LSNC provides a central place for key community events such as the Ann Arbor Earth Day, a free event welcoming over 3000 people each year.  Recently we added a monthly bonfire, called Fireside Fun, as a way for our community to regularly gather outside and enjoy nature and get to know our neighbors. Please be sure to join us in exploring and celebrating our natural world. </mutableString>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1ej-Uh-Llj">
+                                    <rect key="frame" x="8" y="61" width="38" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                    <color key="tintColor" red="0.18417386763638163" green="0.653912141588055" blue="0.93113469503012047" alpha="1" colorSpace="deviceRGB"/>
+                                    <state key="normal" title="Close">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="8gp-J8-L3i"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ourreach_03.png" id="V7H-Rp-aM7">
+                                    <rect key="frame" x="8" y="125" width="304" height="205"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To find out more about our programs, visit our website www.lesliesnc.org or call 734-997-1553! " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FLf-uU-LAR">
+                                    <rect key="frame" x="22" y="873" width="256" height="90"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <connections>
+                        <outlet property="delegate" destination="1" id="i3b-LS-JlV"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="339" y="400"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ourreach_03.png" width="1099" height="733"/>
+    </resources>
+</document>
